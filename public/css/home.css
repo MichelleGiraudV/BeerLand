@@ -1,10 +1,10 @@
 :root{
-     --morado-oscuro: #355070;
-     --morado-intermedio: #6D597A;
-     --morado-claro: #B56576;
-     --naranja: #E56B6F;
-     --gris: #EAAC8B;
-     --blanco: #FFCDB2;
+     --azul-fuerte: #355070;
+     --morado-claro: #355070;
+     --rojo-claro: #B56576;
+     --rosa-claro: #E56B6F;
+     --beige: #EAAC8B;
+     --blanco: #FFFFFF;
 }
 
 
@@ -75,7 +75,7 @@ main{
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    background-color: var(--morado-oscuro);
+    background-color: var(--azul-fuerte);
     margin-top: 72px;
     margin-bottom: 100px;
     padding: 65px 0px;
@@ -151,10 +151,10 @@ main{
     flex-direction: column;
     padding: 10px;
     width: 100%;
-    background-color: var(--morado-intermedio)
+    background-color: var(--rojo-claro)
 }
 .estrellas{
-    color: var(--naranja);
+    color: var(--rosa-claro);
     font-size: 12px;
     width: 100%;
 }
@@ -187,7 +187,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    background-color: var(--morado-intermedio);
+    background-color: var(--rojo-claro);
     margin-top: 300px;
     margin-bottom: 120px;
     padding-top: 100px;
@@ -233,7 +233,7 @@ main{
     color: var(--blanco);
 }
 .item-text-seccion p{
-    color: var(--gris)
+    color: var(--beige)
 }
 
   /* caja reversa - consola por seccion */
@@ -273,9 +273,9 @@ main{
     margin: 30px 0;
     border-radius: 12px;
     border: 0px;
-    color: var(--morado-claro);
+    color: var(--rojo-claro);
     font-weight: 600;
-    background-color: var(--gris);
+    background-color: var(--beige);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
