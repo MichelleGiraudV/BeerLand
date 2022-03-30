@@ -28,7 +28,7 @@ main{
 #imgPrincipal img{
     width: 100%;
     display: block;
-    max-height: 562px;
+    opacity: 50%;
 }
 
 /* seccion logos de marca */
@@ -250,7 +250,7 @@ main{
 .item-img-reverse{
     position: absolute;
     top: -300px;
-    height: 320px;
+    height: 300px;
 }
 
 .item-img-reverse div{
@@ -261,6 +261,7 @@ main{
 .item-img-reverse img{
     display: block;
     height: 100%;
+    
 }
 
 /* boton vermas */

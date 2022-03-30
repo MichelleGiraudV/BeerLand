@@ -62,6 +62,8 @@ main{
 .porLogo h3{
    margin: 0px;
    width: 50%;
+   font-size: medium;
+   padding-left: 10px;
 }
 
 .porLogo p{
