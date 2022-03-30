@@ -1,0 +1,200 @@
+:root{
+    --na1: #FF6D00;
+    --na2: #FF7900;
+    --na3: #FF8500;
+    --na4: #FF9100;
+    --na5: #FF9E00;
+    --mo1: #240046;
+    --mo2: #3C096C;
+    --mo3: #5A189A;
+    --mo4: #7B2CBF;
+    --mo5: #9D4EDD;
+ }
+body {
+    background-image: url(/img/Fondo.jpg);
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+* {
+    box-sizing: border-box;
+  }
+#contenedor-login {
+    width: 700px;
+    height: 520px;
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contenedor-login h2 {
+    align-items: center;
+    margin-right: 350px;
+    
+}
+#contenedor-login img {
+    display: flex;
+    padding-top: 20px;
+    cursor: pointer;
+    align-items: center;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+input[type=text] {
+    display: flex;
+    width: 262px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-right: 350px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid var(--mo1);
+  }
+  input[type=password] {
+    display: flex;
+    width: 262px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-right: 350px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid var(--mo1);
+  }
+  .botonDeIngresar {
+    display: flex;
+    width: 262px;
+    color: white;
+    background-color: var(--mo1);
+    padding: 9px;
+    border-radius: 8px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+  }
+  .mensajeDeRegistro {
+    display: flex;
+    justify-content: center;
+    font-size: 8px;
+  }
+  .botonDeRegistro {
+    display: flex;
+    color: #00ffff;
+    background-color: white;
+    padding-left: 5px;
+    padding-top: 7px;
+    border-radius: 5px;
+    font-size: 8px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+
+/* @media (min-width: 430px) {
+    #contenedor-login{
+        width: 50%;
+        height: 50%;
+    }
+    #contenedor-login h2{
+        font-size: 110%;
+    }
+    #contenedor-login img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+        height: 20%;
+    }
+    input[type=text] {
+        width: 80%;
+        font-size: 70%;
+    }
+    input[type=password] {
+        width: 80%;
+        font-size: 70%;
+    }
+    .botonDeIngresar {
+        width: 80%;
+        font-size: 70%;
+    } 
+}
+@media (min-width:768px){
+    #contenedor-login{
+        width: 70%;
+        height: 70%;
+    }
+    #contenedor-login h2{
+        font-size: 130%;
+    }
+    #contenedor-login img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 15%;
+        height: 15%;
+    }
+    input[type=text] {
+        width: 80%;
+        font-size: 80%;
+    }
+    input[type=password] {
+        width: 80%;
+        font-size: 80%;
+    }
+    .botonDeIngresar {
+        width: 80%;
+        font-size: 100%;
+    } 
+    .mensajeDeRegistro {
+        font-size: 70%;
+      }
+    .botonDeRegistro {
+        font-size: 100%;
+        padding-top: 10px;
+    } 
+ }
+ 
+ @media (min-width:1279px){
+    #contenedor-login{
+        width: 40%;
+        height: 50%;
+    }
+    #contenedor-login h2{
+        font-size: 150%;
+    }
+    #contenedor-login img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 13%;
+        height: 13%;
+    }
+    input[type=text] {
+        width: 70%;
+        font-size: 80%;
+    }
+    input[type=password] {
+        width: 70%;
+        font-size: 80%;
+    }
+    .botonDeIngresar {
+        width: 70%;
+        font-size: 80%;
+    } 
+    .mensajeDeRegistro {
+        font-size: 70%;
+      }
+    .botonDeRegistro {
+        font-size: 100%;
+        padding-top: 10px;
+    } 
+ } */

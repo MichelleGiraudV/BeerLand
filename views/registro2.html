@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/registro2.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <nav>
+                <a href="/">
+                    <div id="logo">
+                        <img src="/img/logoProvisional.png" alt="">
+                    </div>
+                </a>
+                <div id="barraBusqueda">
+                    <i class="fa-solid fa-magnifying-glass navButton"></i>
+                    <input type="search" placeholder="Busca aquí...">
+
+                </div>
+                <div id="navegacion">
+                    <div id="barraBusqueda1">
+                        <i class="fa-solid fa-magnifying-glass navButton"></i>
+                        <input type="search" placeholder="Busca aquí...">
+
+                    </div>
+                    <div id="listaNavegacion">
+                        <ul>
+                            <li><a href="/">Inicio </a></li>
+                            <li><a href="/ListaProductos">Productos </a></li>
+                            <li><a href="/">Servicios </a></li>
+                            <li><a href="">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navButton barras">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
+                <div class="navButton login">
+                    <a href="/login"><i class="fa-solid fa-user"></i></a>
+                </div>
+                <div class="navButton carrito">
+                    <a href="/carrito-de-compras"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contenedor-login">
+            <a href="/">
+                <div>
+                    <img src="/img/logoProvisional.png" alt="" width="70" height="70" padding-top:"20">
+                </div>
+            </a>
+
+            <div class="row">
+                <div class="column"></div>
+                    <h2 style="font: size 2vw; align-items: center;">Registrarse</h2>
+                    <input type="text" id="name" name="name" required placeholder="Nombre de usuario"><br>
+                    <input type="text" id="pwd" name="pwd" required placeholder="Email"><br>
+                    <input type="password" id="pwd" name="pwd" required placeholder="Contraseña"><br><br>
+                </div>
+                <div class="column"></div>
+                    <h2 style="font: size 2vw; align-items: center;">Registrarse</h2>
+                    <input type="text" id="name" name="name" required placeholder="Nombre de usuario"><br>
+                    <input type="text" id="pwd" name="pwd" required placeholder="Email"><br>
+                    <input type="password" id="pwd" name="pwd" required placeholder="Contraseña"><br><br>
+                </div>
+
+            </div>
+
+
+            <button class="botonDeIngresar">Ingresar</button><br>
+            <div class="mensajeDeRegistro">
+                <p>¿Ya estás registrado?</p>
+                <a href="/registro"><button class="botonDeRegistro">Iniciar sesión</button></a>
+                <div class="btn1" style="color: white;">
+                    <i class="icon-chevron-sign-left"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <footer>
+    <div id="footer">
+        <div id="divFooter" >
+        <section>
+            <h2>Contactenos</h2>
+            <p><i class="fa-solid fa-envelope"></i> playerisland@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 000-000-0000</p>
+        </section>
+        <section>
+           <div> <button class="red"><a href="https://www.instagram.com "><i class="fa-brands fa-instagram "></i></a></button>
+            <button class="red"><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a></button>
+            <button class="red"><a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a></button>
+            <button class="red"><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></button></div>
+        </section>
+        </div>
+        <section class="divFooter">
+            <h3 >Productos</h3>
+            <ul>
+                <li><a> lorem ipsum</a></li>
+                <li><a> lorem ipsum</a></li>
+                <li><a> lorem ipsum</a></li>
+                <li><a> lorem ipsum</a></li>
+            </ul>
+        </section>
+        <section class="divFooter">
+            <form action="/" method="post">
+                <h3>Escribenos</h3>
+                <input id="formEmail" type="email" name="email" placeholder="ejemplo@correo.com">
+                <textarea name="comentarios" rows="10" cols="40" placeholder="Escribe aquí tus comentarios"></textarea>
+                <div id="botones">
+                    <button id="enviarForm" type="submit" value="ENVIAR">ENVIAR</button>
+                    <button id="resetForm" type="reset">BORRAR</button>
+                </div>
+            </form>
+        </section>
+    </div>    
+
+    </footer> -->
+</body>
+</html>

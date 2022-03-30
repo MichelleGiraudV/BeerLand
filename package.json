@@ -1,0 +1,20 @@
+{
+  "name": "Pet_Land",
+  "version": "1.0.0",
+  "description": "Proyecto Integrador Digital House",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichelleGiraudV/Pet_Land.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichelleGiraudV/Pet_Land/issues"
+  },
+  "homepage": "https://github.com/MichelleGiraudV/Pet_Land#readme"
+}
