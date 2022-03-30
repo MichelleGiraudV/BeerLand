@@ -7,7 +7,7 @@ Michelle Giraud y Miguel Velasco.
 
 **2. Temática del sitio:**
 
-Tienda de Cervzas.
+Tienda de Cervezas.
 
 **3. Público:**
 
@@ -15,7 +15,7 @@ Personas interesadas en adquirir un cervezas de distintas nacionalidades (Todas 
 
 **4. Objetivo:**
 
-El objetivo de este proyecto es realizar una página web enfocada a la venta de cervezas de distintas nacionalidade. Se busca dirigirnos y conocer las necesidades del público que ingresan a la página y que realiza todos lo pasos correctos hasta llegar a la meta de venta. A través de un diseño y funcionalidades atractivas.
+El objetivo de este proyecto es realizar una página web enfocada a la venta de cervezas de distintas nacionalidades. Se busca dirigirnos y conocer las necesidades del público que ingresan a la página y que realiza todos lo pasos correctos hasta llegar a la meta de venta. A través de un diseño y funcionalidades atractivas.
 
 **5.Definir temática del Market Place**
 
