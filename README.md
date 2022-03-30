@@ -37,6 +37,6 @@ El Market Place hace referencia al espacio virtual en el que los clientes tienen
 
 **7. Extras**
 
-*Colores:* https://coolors.co/150722-230b39-352347-fca311-d6d6d6-ffffff
+*Colores:* https://coolors.co/palette/355070-6d597a-b56576-e56b6f-eaac8b
 
-*Tablero:* https://trello.com/invite/b/ihb592uo/831e44afeeba7291beed8699cba1cfff/sprint-2
+*Tablero:* https://trello.com/b/1gMeVDPC/digital-house
