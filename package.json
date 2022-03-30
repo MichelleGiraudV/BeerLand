@@ -1,8 +1,8 @@
 {
-  "name": "Pet_Land",
+  "name": "BeerLand",
   "version": "1.0.0",
   "description": "Proyecto Integrador Digital House",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

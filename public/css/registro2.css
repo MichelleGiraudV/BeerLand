@@ -17,89 +17,75 @@ main {
     display: flex;
     flex-direction: column;
 }
-* {
+  * {
     box-sizing: border-box;
   }
-#contenedor-login {
-    width: 700px;
-    height: 520px;
-    margin: 30px auto;
-    background: #ffffff;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#contenedor-login h2 {
-    align-items: center;
-    margin-right: 350px;
-    
-}
-#contenedor-login img {
-    display: flex;
-    padding-top: 20px;
-    cursor: pointer;
-    align-items: center;
-}
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+  
+  /* Add padding to containers */
+  .container {
+    width: 370px;
+    margin-left: 10px;
+    margin-top: 70px;
+    padding: 16px;
+    background-color: white;
+
   }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-input[type=text] {
+  
+  /* Full-width input fields */
+  input[type=text] {
     display: flex;
-    width: 262px;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    margin-right: 350px;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid var(--mo1);
   }
   input[type=password] {
     display: flex;
-    width: 262px;
+    width: 100%;;
     padding: 12px 20px;
     margin: 8px 0;
-    margin-right: 350px;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid var(--mo1);
   }
-  .botonDeIngresar {
-    display: flex;
-    width: 262px;
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #04AA6D;
     color: white;
-    background-color: var(--mo1);
-    padding: 9px;
-    border-radius: 8px;
-    font-size: 12px;
+    padding: 16px 20px;
     border: none;
     cursor: pointer;
-    justify-content: center;
+    width: 100%;
+    opacity: 0.9;
   }
-  .mensajeDeRegistro {
-    display: flex;
-    justify-content: center;
-    font-size: 8px;
+  
+  .registerbtn:hover {
+
+    opacity: 1;
   }
-  .botonDeRegistro {
-    display: flex;
-    color: #00ffff;
-    background-color: white;
-    padding-left: 5px;
-    padding-top: 7px;
-    border-radius: 5px;
-    font-size: 8px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .containerSignIn {
+    background-color: #f1f1f1;
+    text-align: center;
+    width: 370px;
+    margin-left: 10px;
+    margin-bottom: 70px;
+    padding: 2px;
   }
 
 /* @media (min-width: 430px) {
