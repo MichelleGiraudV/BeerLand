@@ -16,7 +16,7 @@ app.use("/", mainRouter);
 
 app.use("/product", productRouter);
 
-app.use("/user",userRouter);
+app.use("/user", userRouter);
 
 app.listen(PORT, ()=>{
     console.log(`este servidor esta sirviendo en el puerto ${PORT}`);
