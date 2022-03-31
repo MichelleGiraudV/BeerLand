@@ -58,6 +58,13 @@ const controller = {
     },
     carritoDeCompras: (req,res)=>{
         res.render(path.join('carrito-de-compras'));
+    },
+    editarProducto: (req,res)=>{
+        res.render(path.join('editar-producto'));
+    },
+    crearProducto: (req,res)=>{
+        res.render(path.join('crear-producto'));
     }
+
 }
 module.exports = controller;
