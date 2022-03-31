@@ -2,7 +2,7 @@ const path = require('path');
 
 const controller = {
     detalleDeProducto: (req,res)=>{
-        res.render(path.join('detalle-producto'));
+        res.render(path.join('./products/detalle-producto'));
     },
     ListaProductos: (req,res)=>{
         const products = [
@@ -52,18 +52,18 @@ const controller = {
                 Estrellas:"5" 
             }
         ];
-        res.render("ListaProductos",{products: products});
+        res.render("./products/ListaProductos",{products: products});
 
-        res.render(path.join('ListaProductos'));
+        res.render(path.join('./products/ListaProductos'));
     },
     carritoDeCompras: (req,res)=>{
-        res.render(path.join('carrito-de-compras'));
+        res.render(path.join('./products/carrito-de-compras'));
     },
     editarProducto: (req,res)=>{
-        res.render(path.join('editar-producto'));
+        res.render(path.join('./products/editar-producto'));
     },
     crearProducto: (req,res)=>{
-        res.render(path.join('crear-producto'));
+        res.render(path.join('./products/crear-producto'));
     }
 
 }
