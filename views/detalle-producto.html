@@ -25,7 +25,7 @@
             <nav>
                 <a href="/">
                     <div id="logo">
-                        <img src="/img/logoProvisional.png" alt="">
+                        <img src="/img/logo/logo.png" alt="">
                     </div>
                 </a>
                 <div id="barraBusqueda">
@@ -67,7 +67,7 @@
         <!-- imagenes  -->
         <!-- <div id="main"> -->
         <section id="imagenes-producto">
-            <h4>Productos > Xbox One > Control SE</h4>
+            <h4>Productos > Paises Bajos > Heineken</h4>
             <div id="imagenPrincipal">
                 <img src="/img/Cervezas/heineken.png" alt="">
             </div>
@@ -75,16 +75,21 @@
 
                 <div class="divFlechas"><button class="flechas"><i class="fa-solid fa-caret-left"></i></button></div>
                 <div id="siguientes-imagenes">
-                    <div id="imagenscroll1" class="imagenes-pequeñas"><img
-                            src="/img/Cervezas/heineken.png"
-                            alt=""></div>
-                    <div id="imagenscroll2" class="imagenes-pequeñas"> 
-                        <img src="/img/Cervezas/heineken.png" alt=""></div>
-                    <div id="imagenscroll3" class="imagenes-pequeñas"> <img src="/img/Cervezas/heineken.png" alt=""></div></div>
-                    <div id="imagenscroll4" class="imagenes-pequeñas"> <img src="/img/Cervezas/heineken.png" alt=""></div></div>
+                    <div id="imagenscroll1" class="imagenes-pequeñas">
+                        <img src="/img/Cervezas/heineken.png" alt="">
+                    </div>
+                    <div id="imagenscroll1" class="imagenes-pequeñas">
+                        <img src="/img/Cervezas/heineken.png" alt="">
+                    </div>
+                    <div id="imagenscroll1" class="imagenes-pequeñas">
+                        <img src="/img/Cervezas/heineken.png" alt="">
+                    </div>
+                    <div id="imagenscroll2" class="imagenes-pequeñas">
+                        <img src="/img/Cervezas/heineken.png" alt="">
+                    </div>
                 </div>
-                <div class="divFlechas"><button class="flechas"><i class="fa-solid fa-caret-right"></i></button></div>
-
+                <div class="divFlechasLast"><button class="flechas"><i class="fa-solid fa-caret-right"></i></button>
+                </div>
             </div>
 
 
@@ -92,7 +97,7 @@
         <!-- descripcion -->
 
         <section id="descripcion-producto">
-            <h2>Nombre del producto</h2>
+            <h2>Heineken</h2>
             <div class="estrellas" style="color: gold;">
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
@@ -101,9 +106,9 @@
                 <i class="fa-regular fa-star"></i>
             </div>
             <h4 style="color: rgba(255, 255, 255, 0.8); margin-bottom: 0px;">reviews (1)</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi animi quasi eum ducimus eos. Alias
-                vel impedit doloremque veritatis, eius, aperiam quod expedita qui tenetur nihil quos laboriosam
-                similique at.</p>
+            <p>Heineken Pilsener, conocida simplemente como Heineken,
+                es una cerveza con 5,0 % alc. vol., elaborada por
+                la cervecería neerlandesa Heineken International.</p>
 
         </section>
 
@@ -117,33 +122,20 @@
 
                 <form action="/carrito-compra" method="get" id="formCompra">
                     <div style="display: flex; align-items: center;">
-                        <h3 style="color: white; display: flex;">Color: </h3>
+                        <h3 style="color: white; display: flex;">Cantidad: </h3>
                         <select name="escoje-color" id="selectorColor">
-                            <option value="porDefecto" selected>Elige un Color</option>
-                            <option value="negro" style="background-color: black;">Negro</option>
-                            <option value="blanco" style="background-color: rgb(255, 255, 255); color: black;">Blanco
-                            </option>
-                            <option value="rojo" style="background-color: rgb(255, 0, 0);">Rojo</option>
-                            <option value="azul" style="background-color: rgb(8, 4, 252);">Azul</option>
+                            <option value="porDefecto" selected>Cantidad</option>
+                            <option value="negro">1</option>
+                            <option value="blanco">2</option>
+                            <option value="rojo">3</option>
+                            <option value="azul">4</option>
                         </select>
                     </div>
-                    <h2 style="font-weight:normal; opacity: 0.8;">$50.000</h2>
-                    <div style="display: flex; align-items: center;">
-                        <h3 style="color: white;">cantidad:</h3>
-                        <select name="escoje-cantidad" id="selectorCantidad">
-                            <option value="1" selected>1 unidad</option>
-                            <option value="2">2 unidades</option>
-                            <option value="3">3 unidades</option>
-                            <option value="4">4 unidades</option>
-                            <option value="5">5 unidades</option>
-                            <option value="6">Mas de 5 unidades</option>
-
-                        </select>
-                    </div>
+                    <h2 style="font-weight:normal; opacity: 0.8;">$200 MXN</h2>
                     <div style="display: flex; align-items: center;">
                         <h3 style="color: white;">Metodo de pago: </h3>
                         <select name="escoje-metodo" id="selectorMetodo">
-                            <option value="pse" selected>PSE</option>
+                            <option value="paypal" selected>PAYPAL</option>
                             <option value="visa">VISA</option>
                             <option value="masterCard">MASTER CARD</option>
                             <option value="americanExpress">AMERICAN EXPRESS</option>
@@ -159,29 +151,33 @@
         <!-- OPCIONES DE PRODUCTO -->
 
         <section id="opciones-producto">
-            <div id="navOpciones">
-                <div>
-                    <button class="botonOpc">Descripcion</button>
-                </div>
-                <div>
-                    <button class="botonOpc">Caracteristicas del producto</button>
-                </div>
-                <div>
-                    <button class="botonOpc">Comentarios</button>
-                </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTabs(event, 'Descripcion')">Descripcion</button>
+                <button class="tablinks" onclick="openTabs(event, 'Caracteristicasdelproducto')">Caracteristicas del
+                    producto</button>
+                <button class="tablinks" onclick="openTabs(event, 'Comentarios')">Comentarios</button>
             </div>
-            <div id="parrafo-opciones">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vero
-                    sint perferendis unde? Similique beatae veniam, sint deserunt, debitis
-                    quis perspiciatis
-                    et doloribus sed enim sapiente. Perferendis atque ipsa magnam!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
-                    maxime rem. Odio provident iusto unde facilis voluptatibus similique
-                    deserunt dolore voluptates quis quasi voluptate rerum nisi, molestiae
-                    tempora pariatur harum!</p>
+            <div id="Descripcion" class="tabcontent">
+                <p>Descripcion
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum in ex minima doloribus ipsum. Recusandae
+                    id perspiciatis aut, nemo alias magnam rem, labore consequatur nisi officia quos doloribus magni
+                    quae.</p>
+            </div>
+
+            <div id="Caracteristicasdelproducto" class="tabcontent">
+                <p>Caracteristicas
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum in ex minima doloribus ipsum. Recusandae
+                    id perspiciatis aut, nemo alias magnam rem, labore consequatur nisi officia quos doloribus magni
+                    quae.</p>
+            </div>
+
+            <div id="Comentarios" class="tabcontent">
+                <p>Comentarios
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum in ex minima doloribus ipsum. Recusandae
+                    id perspiciatis aut, nemo alias magnam rem, labore consequatur nisi officia quos doloribus magni
+                    quae.</p>
             </div>
         </section>
-
 
 
         <!-- Nuestros productos -->
@@ -193,8 +189,7 @@
                 <div class="productoDesc">
                     <div class="imgNuProductos">
                         <a href="/detalle-producto">
-                            <img src="/img/Cervezas/heineken.png"
-                                alt="" href="/">
+                            <img src="/img/Cervezas/heineken.png" alt="" href="/">
                         </a>
                     </div>
                     <div class="descripcion">
@@ -329,3 +324,26 @@
 </body>
 
 </html>
+
+<script>
+    function openTabs(evt, tabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
