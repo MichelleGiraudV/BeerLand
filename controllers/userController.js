@@ -2,13 +2,13 @@ const path = require('path');
 
 const controller = {
     login: (req,res)=>{
-        res.sendFile(path.join(__dirname,'../views/login.html'));
+        res.render(path.join('login'));
     },
     registro: (req,res)=>{
-        res.sendFile(path.join(__dirname,'../views/registro.html'));
+        res.render(path.join('registro'));
     },
     registro2: (req,res)=>{
-        res.sendFile(path.join(__dirname,'../views/registro2.html'));
+        res.render(path.join('registro2'));
     }
 }
 module.exports = controller;

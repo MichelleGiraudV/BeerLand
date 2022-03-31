@@ -8,14 +8,17 @@ const productRouter = require("./routes/productRoutes");
 const userRouter = require("./routes/userRoutes");
 
 app.use(express.static(path.join(__dirname,'public')));
-
-app.listen(PORT, ()=>{
-    console.log(`este servidor esta sirviendo en el puerto ${PORT}`);
-});
+//ejs
+app.set("view engine","ejs");
+app.set("views","./views");
 
 app.use("/", mainRouter);
 
 app.use("/product", productRouter);
 
 app.use("/user",userRouter);
+
+app.listen(PORT, ()=>{
+    console.log(`este servidor esta sirviendo en el puerto ${PORT}`);
+});
 

@@ -2,7 +2,8 @@ const path = require('path');
 
 const controller = {
     main: (req,res)=>{
-        res.sendFile(path.join(__dirname,'../views','home.html'))
+        //sendFile y no es html entonces se descarga
+        res.render(path.join('home'))
     },
 }
 module.exports = controller;

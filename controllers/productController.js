@@ -2,13 +2,13 @@ const path = require('path');
 
 const controller = {
     detalleDeProducto: (req,res)=>{
-        res.sendFile(path.join(__dirname,'../views/detalle-producto.html'));
+        res.render(path.join('detalle-producto.'));
     },
     ListaProductos: (req,res)=>{
-        res.sendFile(path.join(__dirname,'../views/ListaProductos.html'));
+        res.render(path.join('ListaProductos'));
     },
     carritoDeCompras: (req,res)=>{
-        res.sendFile(path.join(__dirname,'../views/carrito-de-compras.html'));
+        res.render(path.join('carrito-de-compras'));
     }
 }
 module.exports = controller;
