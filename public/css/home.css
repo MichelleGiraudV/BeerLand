@@ -94,6 +94,10 @@ main{
     justify-content:space-between;
     width: 60%;
 }
+.productoEnFila img{
+    height: 250px;
+    width: 250px;
+}
 
 .productoDescPrimera{
     display: flex;

@@ -388,7 +388,14 @@ display: flex;
     }
     #imagenscroll4{
         display: flex;
-        }
+    }
+    #descripcion-producto{
+        width: 40%;
+        margin-top: 70px; 
+    }
+    #compra-producto{
+        margin-top: 50px;
+    }
 }
 @media (min-width: 1030px) {
     #compra-producto{

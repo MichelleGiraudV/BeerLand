@@ -162,6 +162,10 @@ main{
     text-decoration: none;
     color: var(--blanco);
 }
+.producto1 img{
+    width: 250px;
+    height: 350px;
+}
 .producto2{
     display: flex;
     flex-wrap: wrap;
@@ -175,6 +179,10 @@ main{
     text-decoration: none;
     color: var(--blanco);
 }
+.producto2 img{
+    width: 250px;
+    height: 350px;
+}
 .producto3{
     display: flex;
     flex-wrap: wrap;
@@ -187,6 +195,10 @@ main{
     margin: 12px 0px;
     text-decoration: none;
     color: var(--blanco);
+}
+.producto3 img{
+    width: 250px;
+    height: 350px;
 }
 .descripcion{
     display: flex;
