@@ -2,7 +2,7 @@ const path = require('path');
 
 const controller = {
     detalleDeProducto: (req,res)=>{
-        res.render(path.join('detalle-producto.'));
+        res.render(path.join('detalle-producto'));
     },
     ListaProductos: (req,res)=>{
         const products = [
@@ -54,7 +54,7 @@ const controller = {
         ];
         res.render("ListaProductos",{products: products});
 
-        //res.render(path.join('ListaProductos'));
+        res.render(path.join('ListaProductos'));
     },
     carritoDeCompras: (req,res)=>{
         res.render(path.join('carrito-de-compras'));
