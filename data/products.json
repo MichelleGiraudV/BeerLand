@@ -1,0 +1,81 @@
+[{
+    "id": 1,
+    "prod_name": "Delirium tremens",
+    "description": "nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros",
+    "image": "prod_name1.jpg",
+    "category": "user",
+    "colors": "Fuscia",
+    "price": "$57224.44"
+  }, {
+    "id": 2,
+    "prod_name": "Hoegaarden",
+    "description": "in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id",
+    "image": "prod_name2.jpg",
+    "category": "user",
+    "colors": "Pink",
+    "price": "$25863.19"
+  }, {
+    "id": 3,
+    "prod_name": "Estrella",
+    "description": "in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing",
+    "image": "prod_name3.jpg",
+    "category": "user",
+    "colors": "Yellow",
+    "price": "$18627.46"
+  }, {
+    "id": 4,
+    "prod_name": "Estrella",
+    "description": "sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus",
+    "image": "prod_name4.jpg",
+    "category": "user",
+    "colors": "Maroon",
+    "price": "$73306.76"
+  }, {
+    "id": 5,
+    "prod_name": "Peroni",
+    "description": "molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci",
+    "image": "prod_name5.jpg",
+    "category": "user",
+    "colors": "Pink",
+    "price": "$66256.70"
+  }, {
+    "id": 6,
+    "prod_name": "BudLight",
+    "description": "luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum",
+    "image": "prod_name6.jpg",
+    "category": "user",
+    "colors": "Yellow",
+    "price": "$90039.19"
+  }, {
+    "id": 7,
+    "prod_name": "",
+    "description": "pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi",
+    "image": "prod_name7.jpg",
+    "category": "user",
+    "colors": "Teal",
+    "price": "$98943.93"
+  }, {
+    "id": 8,
+    "prod_name": "BudLight",
+    "description": "eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae",
+    "image": "prod_name8.jpg",
+    "category": "user",
+    "colors": "Goldenrod",
+    "price": "$80553.83"
+  }, {
+    "id": 9,
+    "prod_name": "Coors Light",
+    "description": "imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris",
+    "image": "prod_name9.jpg",
+    "category": "user",
+    "colors": "Mauv",
+    "price": "$95517.33"
+  }, {
+    "id": 10,
+    "prod_name": "Mahou",
+    "description": "auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis",
+    "image": "prod_name10.jpg",
+    "category": "user",
+    "colors": "Crimson",
+    "price": "$41335.87"
+  }]
