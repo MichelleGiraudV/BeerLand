@@ -1,7 +1,7 @@
 Michelle 
 Sprint 3
   1. Comenzar a hacer
-    Organizar las tareas en cuanto a disponibilidad de cada uno
+  Organizar las tareas en cuanto a disponibilidad de cada uno
   2. Hacer más
     Estar en constante comunicacion para ver la disponibilidad de la semana y los avances
   3. Continuar haciendo
