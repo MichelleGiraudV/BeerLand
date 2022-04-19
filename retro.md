@@ -1,7 +1,8 @@
 Michelle 
+
 Sprint 3
   1. Comenzar a hacer
-  Organizar las tareas en cuanto a disponibilidad de cada uno
+    Organizar las tareas en cuanto a disponibilidad de cada uno
   2. Hacer más
     Estar en constante comunicacion para ver la disponibilidad de la semana y los avances
   3. Continuar haciendo
@@ -10,14 +11,21 @@ Sprint 3
     Agregar tarejetas de ultimo momento, es mejor desde el inicio crear todas y darnos una idea de el tiempo que tenemos que invertir cada uno
   5. Dejar de hacer
     No subir los commits a tiempo 
+
 Sprint 4 
   1. Comenzar a hacer
-  2. Hacer más
-  3. Continuar haciendo
-  4. Hacer menos
-  5. Dejar de hacer
+    Corregir los Sprint 2,3 y 4
+  3. Hacer más
+    Mejorar comunicacion
+  5. Continuar haciendo
+    Actualizacion de las tarjetas
+  7. Hacer menos
+    Trabajar las tarjetas de ultimo momento
+  9. Dejar de hacer
+    No subir los commits a tiempo 
 
 Miguel
+
 Sprint 3
   1. Comenzar a hacer
     Editar el disño y ya no hacer modificaciones de ultimo momento
@@ -29,6 +37,7 @@ Sprint 3
     Hacer cambios de ultimo momento
   5. Dejar de hacer
     No subir los commits a tiempo
+
 Sprint 4 
   1. Comenzar a hacer
   2. Hacer más
