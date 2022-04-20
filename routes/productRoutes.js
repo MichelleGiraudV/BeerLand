@@ -10,8 +10,6 @@ router.use(methodOverride('_method'));
 
 router.get('/detalle-producto', productController.detalleDeProducto);
 
-
-
 router.get('/carrito-de-compras', productController.carritoDeCompras);
 
 //* 1
@@ -20,7 +18,8 @@ router.get('/ListaProductos', productController.ListaProductos);
 //* 2
 //Render la vista GET 
 router.get('/crear', productController.crearProducto);
-//* 3
+//* 3 
+//! FALTA
 //Detalle de producto particular
 router.get('/:id/',productController.detallesDeUnProducto);
 //* 4 
@@ -29,8 +28,10 @@ router.post('/',productController.guardarProducto);
 //* 5 
 router.get('/:id/editar-producto', productController.editarProducto);
 //* 6 
+//! FALTA
 router.put('/:id',productController.actualizacionProducto);
 //*7
+//! FALTA
 router.delete('/:id',productController.eliminar);
 
 module.exports = router;

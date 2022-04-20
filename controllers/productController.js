@@ -28,7 +28,7 @@ const controller = {
          const id = req.params.id;
          //obtenemos un array de porductos
          const product= products.find(product => product.id == id)
-         return res.render("../products/editar-producto",{product});
+         return res.render("./products/editar-producto",{product});
     },
     crearProducto: (req,res)=>{
         return res.render("./products/crear-producto");
@@ -47,7 +47,11 @@ const controller = {
         return res.render("producto editado");
     },
     eliminar: (req,res)=>{
-        return res.render("producto eliminado");
+        //guardar el id
+        const id = req.params.id;
+        //obtenemos un array de porductos
+        const product= products.find(product=>product.id == id)
+        return res.render(("producto eliminado"),{product});
     }
 
 }
