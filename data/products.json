@@ -45,13 +45,13 @@
   "country": "Alemania"
 }, {
   "id": 6,
-  "prod_name": "Corona",
+  "prod_name": "Delirum",
   "rating": 1,
   "description": "massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo",
   "price": "$274.55",
   "category": "Clara",
   "image": "6.jpg",
-  "country": "México"
+  "country": "Bélgica"
 }, {
   "id": 7,
   "prod_name": "Quilmes",
@@ -178,4 +178,14 @@
   "category": "Ambar",
   "image": "20.jpg",
   "country": "Bélgica"
-}]
+}, {
+  "id": 20,
+  "prod_name": "Palermo",
+  "rating": 2,
+  "description": "iaculis diam erat fermentum justo nec condimentum neque sapien placerat",
+  "price": "$274.59",
+  "category": "Ambar",
+  "image": "21.jpg",
+  "country": "Argentina"
+}
+]

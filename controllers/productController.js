@@ -12,13 +12,13 @@ const controller = {
     },
     ListaProductos: (req,res)=>{
         const Alemania = products.filter(product => product.country == 'Alemania');
-        const PaisesBajos = products.filter(product => product.country == 'Paises Bajos');
-        const Bélgica = products.filter(product => product.country == 'Bélgica');
-        const Inglaterra = products.filter(product => product.country == 'Inglaterra');
-        const Mexico = products.filter(product => product.country == 'México');
         const Argentina = products.filter(product => product.country == 'Argentina');
+        const Belgica = products.filter(product => product.country == 'Bélgica');
+        const Inglaterra = products.filter(product => product.country == 'Inglaterra');
         const Espana = products.filter(product => product.country == 'España');
-        return res.render("./products/ListaProductos",{Alemania,PaisesBajos,Bélgica,Inglaterra,Mexico,Argentina,Espana});
+        const Mexico = products.filter(product => product.country == 'México');
+        const PaisesBajos = products.filter(product => product.country == 'Paises Bajos');
+        return res.render("./products/ListaProductos",{Alemania,PaisesBajos,Belgica,Inglaterra,Mexico,Argentina,Espana});
     },
     carritoDeCompras: (req,res)=>{
         res.render(path.join('./products/carrito-de-compras'));

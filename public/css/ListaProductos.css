@@ -277,6 +277,38 @@ input[type='radio']:after {
    }
 }
 
+/*====== Products ======*/
+.products-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .products-title {
+    font-size: 2.4em;
+    font-weight: 400;
+  }
+  
+  .product-box {
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 300ms;
+    margin: 20px 0;
+  }
+  
+  .product-box a {
+    display: block;
+  }
+  
+  
+  .product-box_data {
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+
 @media (min-width:1279px){
 
    /* seccion logos de marca */

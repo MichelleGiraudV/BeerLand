@@ -22,367 +22,312 @@
 <body>
     <!-- Header-->
     <%- include('../partials/header'); %>
-    <!-- Header-->
-    <main>
-        <!-- /* seccion logos de marca */ -->
-        <section id="seccionLogosMarca">
-            <a class="letras">
-              <h2>Escoge el tipo de Cervezas</h2>
-              <h1>diferenciar y clasificar las cervezas por su color</h1>  
-            </a>
-            <!-- Primero play -->
-            <a href="/" class="porLogo">
-                <div class="iconMarca">
-                    <i class="fas fa-beer"></i>
-                    <h3>Clara</h3>
-                </div>
-            </a>
-            <!-- Segundo xbox -->
+        <!-- Header-->
+        <main>
+            <!-- /* seccion logos de marca */ -->
+            <section id="seccionLogosMarca">
+                <a class="letras">
+                    <h2>Escoge el tipo de Cervezas</h2>
+                    <h1>diferenciar y clasificar las cervezas por su color</h1>
+                </a>
+                <!-- Primero  -->
+                <a href="/" class="porLogo">
+                    <div class="iconMarca">
+                        <i class="fas fa-beer"></i>
+                        <h3>Clara</h3>
+                    </div>
+                </a>
+                <!-- Segundo  -->
 
-            <a href="/" class="porLogo">
-                <div class="iconMarca">
-                    <i class="fas fa-wine-bottle"></i>
-                    <h3>Ambar</h3>
-                </div>
-            </a>
+                <a href="/" class="porLogo">
+                    <div class="iconMarca">
+                        <i class="fas fa-wine-bottle"></i>
+                        <h3>Ambar</h3>
+                    </div>
+                </a>
 
-            <!-- Tercero nintendo -->
+                <!-- Tercero  -->
 
-            <a href="/" class="porLogo">
-                <div class="iconMarca">
-                    <i class="fas fa-glass-cheers"></i>
-                    <h3>Obscura</h3>
-                </div>
-            </a>
-        </section>
-        <!--Seccion de productos-->
-        <div class="collection-grid">
-                    <!-- Menu-->
-        <section class="columnaMenu">
-            <div class="rowMenu">
-                <h4 class="title font-weight-bold small" style="color: white;">Productos > Play Station</h4>
-                <hr />
-                <h2><b>Filtrado por:</b></h2>
-                <hr />
-                <div class="filtrado">
-                    <h4><b>Todas las cervezas</b></h4>
-                    <p>Por Tipo </p>
-                    <p>Por Estilo</p>
-                    <p>Por Pais</p>
-                    <p>Por Marca</p>
-                </div>
-                <hr />
-                <div class="filtrado">
-                    <h4><b>Por Tipo</b></h4>
-                    <input type="radio" id="color1" name="color" value="color1">
-                    <label for="color1">Clara</label><br>
-                    <input type="radio" id="color2" name="color" value="color2">
-                    <label for="color2">Ambar</label><br>
-                    <input type="radio" id="color3" name="color" value="color3">
-                    <label for="color3">Obscura</label><br>
-                </div>
-                <hr />
-                <div class="filtrado">
-                    <h4><b>Precio</b></h4>
-                    <input type="radio" id="color1" name="color" value="30">
-                    <label for="color1">Hasta $1,000,000</label><br>
-                    <input type="radio" id="color2" name="color" value="60">
-                    <label for="color2">$1,000,000-1,500,000</label><br>
-                    <input type="radio" id="color3" name="color" value="100">
-                    <label for="color3">menos de $1,000,000</label><br>
-                </div>
-                <hr />
-            </div>
-        </section>
-        <section class="columna">
-            <div class="fila">
-                <!--Fila 1 Producto 1-->
-                <% Alemania.forEach(product =>{%>
-                    <div class="producto1">
-                        <div class="imagenProducto">
-                            <a href="/product/detalle-producto">
-                                <img src="/img/Cervezas/<%= product.image %> >">
-                            </a>
+                <a href="/" class="porLogo">
+                    <div class="iconMarca">
+                        <i class="fas fa-glass-cheers"></i>
+                        <h3>Obscura</h3>
+                    </div>
+                </a>
+            </section>
+            <!--Seccion de productos-->
+            <div class="collection-grid">
+                <!-- Menu-->
+                <section class="columnaMenu">
+                    <div class="rowMenu">
+                        <h4 class="title font-weight-bold small" style="color: white;">Productos > Play Station</h4>
+                        <hr />
+                        <h2><b>Filtrado por:</b></h2>
+                        <hr />
+                        <div class="filtrado">
+                            <h4><b>Todas las cervezas</b></h4>
+                            <p>Por Tipo </p>
+                            <p>Por Estilo</p>
+                            <p>Por Pais</p>
+                            <p>Por Marca</p>
                         </div>
-                        <div class="descripcion">
-                            <div class="estrellas"> 
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
+                        <hr />
+                        <div class="filtrado">
+                            <h4><b>Por Tipo</b></h4>
+                            <input type="radio" id="color1" name="color" value="color1">
+                            <label for="color1">Clara</label><br>
+                            <input type="radio" id="color2" name="color" value="color2">
+                            <label for="color2">Ambar</label><br>
+                            <input type="radio" id="color3" name="color" value="color3">
+                            <label for="color3">Obscura</label><br>
+                        </div>
+                        <hr />
+                        <div class="filtrado">
+                            <h4><b>Precio</b></h4>
+                            <input type="radio" id="color1" name="color" value="30">
+                            <label for="color1">Hasta $1,000,000</label><br>
+                            <input type="radio" id="color2" name="color" value="60">
+                            <label for="color2">$1,000,000-1,500,000</label><br>
+                            <input type="radio" id="color3" name="color" value="100">
+                            <label for="color3">menos de $1,000,000</label><br>
+                        </div>
+                        <hr />
+                    </div>
+                </section>
+
+                <section class="columna">
+                    <div class="fila">
+                        <!--Fila 1 Producto 1-->
+                        <!-- PRODUCTOS DE ARGENTINA -->
+                        
+                        <% Argentina.forEach(product=>{ %>
+                            <h1> Argentina</h1>
+                            <div class="producto1">
+                                <div class="imagenProducto">
+                                    <a href="/product/detalle-producto">
+                                        <img src="/img/Cervezas/heineken.png">
+                                    </a>
+                                </div>
+                                <div class="descripcion">
+                                    <div class="estrellas">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <h4>
+                                        <%= product.prod_name %>
+                                    </h4>
+                                    <p><%= product.price %></p>
+                                    <div class="iconosAbajo">
+                                        <a href="#">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-solid fa-share-nodes"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <h4><%= product.prod_name %></h4>
-                            <p><%= product.price %></p>
-                            <div class="iconosAbajo">
-                                <a href="#">
-                                    <i class="fa-regular fa-heart"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-solid fa-share-nodes"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </a>
+                            <%}) %>
+                                
+                                <% Inglaterra .forEach(product=>{ %>
+                                    <h1> Inglaterra </h1>
+                                    <div class="producto1">
+                                        <div class="imagenProducto">
+                                            <a href="/product/detalle-producto">
+                                                <img src="/img/Cervezas/heineken.png">
+                                            </a>
+                                        </div>
+                                        <div class="descripcion">
+                                            <div class="estrellas">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <h4>
+                                                <%= product.prod_name %>
+                                            </h4>
+                                            <p><%= product.price %></p>
+                                            <div class="iconosAbajo">
+                                                <a href="#">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-share-nodes"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <%}) %>
+                    </div>
+                </section>
+                <section class="columna">
+                    <div class="fila">
+                        <!--Fila 1 Producto 1-->
+                        <!-- PRODUCTOS DE ALEMANIA -->
+                        
+                        <% Alemania.forEach(product=>{ %>
+                            <h1> Alemania</h1>
+                            <div class="producto1">
+                                <div class="imagenProducto">
+                                    <a href="/product/detalle-producto">
+                                        <img src="/img/Cervezas/heineken.png">
+                                    </a>
+                                </div>
+                                <div class="descripcion">
+                                    <div class="estrellas">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <h4>
+                                        <%= product.prod_name %>
+                                    </h4>
+                                    <p><%= product.price %></p>
+                                    <div class="iconosAbajo">
+                                        <a href="#">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-solid fa-share-nodes"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                <%})%>
-                
-                <!--Fila 1 Producto 2-->
-                <div class="producto2">
-                    <div class="imagenProducto">
-                        <a href="/product/detalle-producto">
-                            <img src="/img/Cervezas/heineken.png">
-                        </a>
-                    </div>
-                    <div class="descripcion">
-                        <div class="estrellas">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4>Producto</h4>
-                        <p>$50.000</p>
-                        <div class="iconosAbajo">
-                            <a href="#">
-                                <i class="fa-regular fa-heart"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-share-nodes"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--Fila 1 Producto 3-->
-                <div class="producto3">
-                    <div class="imagenProducto">
-                        <a href="/product/detalle-producto">
-                            <img src="/img/Cervezas/heineken.png">
-                        </a>
-                    </div>
-                    <div class="descripcion">
-                        <div class="estrellas">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4>Producto</h4>
-                        <p>$50.000</p>
-                        <div class="iconosAbajo">
-                            <a href="#">
-                                <i class="fa-regular fa-heart"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-share-nodes"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="columna">
-            <div class="fila">
-                <!--Fila 1 Producto 1-->
-                <div class="producto1">
-                    <div class="imagenProducto">
-                        <a href="/product/detalle-producto">
-                            <img src="/img/Cervezas/heineken.png">
-                        </a>
-                    </div>
-                    <div class="descripcion">
-                        <div class="estrellas">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4>Producto</h4>
-                        <p>$50.000</p>
-                        <div class="iconosAbajo">
-                            <a href="#">
-                                <i class="fa-regular fa-heart"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-share-nodes"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--Fila 1 Producto 2-->
-                <div class="producto2">
-                    <div class="imagenProducto">
-                        <a href="/product/detalle-producto">
-                            <img src="/img/Cervezas/heineken.png">
-                        </a>
-                    </div>
-                    <div class="descripcion">
-                        <div class="estrellas">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4>Producto</h4>
-                        <p>$50.000</p>
-                        <div class="iconosAbajo">
-                            <a href="#">
-                                <i class="fa-regular fa-heart"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-share-nodes"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--Fila 1 Producto 3-->
-                <div class="producto3">
-                    <div class="imagenProducto">
-                        <a href="/product/detalle-producto">
-                            <img src="/img/Cervezas/heineken.png">
-                        </a>
-                    </div>
-                    <div class="descripcion">
-                        <div class="estrellas">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4>Producto</h4>
-                        <p>$50.000</p>
-                        <div class="iconosAbajo">
-                            <a href="#">
-                                <i class="fa-regular fa-heart"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-share-nodes"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="columna">
-            <div class="fila">
-                <!--Fila 1 Producto 1-->
-                <div class="producto1">
-                    <div class="imagenProducto">
-                        <a href="/product/detalle-producto">
-                            <img src="/img/Cervezas/heineken.png">
-                        </a>
-                    </div>
-                    <div class="descripcion">
-                        <div class="estrellas">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4>Producto</h4>
-                        <p>$50.000</p>
-                        <div class="iconosAbajo">
-                            <a href="#">
-                                <i class="fa-regular fa-heart"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-share-nodes"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--Fila 1 Producto 2-->
-                <div class="producto2">
-                    <div class="imagenProducto">
-                        <a href="/product/detalle-producto">
-                            <img src="/img/Cervezas/heineken.png">
-                        </a>
-                    </div>
-                    <div class="descripcion">
-                        <div class="estrellas">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4>Producto</h4>
-                        <p>$50.000</p>
-                        <div class="iconosAbajo">
-                            <a href="#">
-                                <i class="fa-regular fa-heart"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-share-nodes"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--Fila 1 Producto 3-->
-                <div class="producto3">
-                    <div class="imagenProducto">
-                        <a href="/product/detalle-producto">
-                            <img src="/img/Cervezas/heineken.png">
-                        </a>
-                    </div>
-                    <div class="descripcion">
-                        <div class="estrellas">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4>Producto</h4>
-                        <p>$50.000</p>
-                        <div class="iconosAbajo">
-                            <a href="#">
-                                <i class="fa-regular fa-heart"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-share-nodes"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                            <%}) %>
 
-    </div>
-    </main>
-    <%- include('../partials/footer'); %>
+                                
+                                <% Espana .forEach(product=>{ %>
+                                    <h1> España </h1>
+                                    <div class="producto1">
+                                        <div class="imagenProducto">
+                                            <a href="/product/detalle-producto">
+                                                <img src="/img/Cervezas/heineken.png">
+                                            </a>
+                                        </div>
+                                        <div class="descripcion">
+                                            <div class="estrellas">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <h4>
+                                                <%= product.prod_name %>
+                                            </h4>
+                                            <p><%= product.price %></p>
+                                            <div class="iconosAbajo">
+                                                <a href="#">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-share-nodes"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <%}) %>
+                    </div>
+                </section>
+                <section class="columna">
+                    <div class="fila">
+                        <!--Fila 1 Producto 1-->
+                        <!-- PRODUCTOS DE Belgica -->
+                        
+                        <% Belgica.forEach(product=>{ %>
+                            <h1> Belgica</h1>
+                            <div class="producto1">
+                                <div class="imagenProducto">
+                                    <a href="/product/detalle-producto">
+                                        <img src="/img/Cervezas/heineken.png">
+                                    </a>
+                                </div>
+                                <div class="descripcion">
+                                    <div class="estrellas">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <h4>
+                                        <%= product.prod_name %>
+                                    </h4>
+                                    <p><%= product.price %></p>
+                                    <div class="iconosAbajo">
+                                        <a href="#">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-solid fa-share-nodes"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <%}) %>
+                                
+                                <% Mexico .forEach(product=>{ %>
+                                    <h1> Mexico </h1>
+                                    <div class="producto1">
+                                        <div class="imagenProducto">
+                                            <a href="/product/detalle-producto">
+                                                <img src="/img/Cervezas/heineken.png">
+                                            </a>
+                                        </div>
+                                        <div class="descripcion">
+                                            <div class="estrellas">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <h4>
+                                                <%= product.prod_name %>
+                                            </h4>
+                                            <p><%= product.price %></p>
+                                            <div class="iconosAbajo">
+                                                <a href="#">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-share-nodes"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <%}) %>
+
+
+                    </div>
+                </section>
+        </main>
+        <%- include('../partials/footer'); %>
 </body>
 
 </html>
