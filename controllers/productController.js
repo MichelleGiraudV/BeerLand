@@ -21,17 +21,17 @@ const controller = {
         return res.render("./products/ListaProductos",{Alemania,PaisesBajos,Belgica,Inglaterra,Mexico,Argentina,Espana});
     },
     carritoDeCompras: (req,res)=>{
-        res.render(path.join('./products/carrito-de-compras'));
+        return res.render("./products/carrito-de-compras");
     },
     editarProducto: (req,res)=>{
          //guardar el id
          const id = req.params.id;
          //obtenemos un array de porductos
-         const product= products.find(product=>product.id == id)
-         return res.render(path.join('./products/editar-producto'),{product});
+         const product= products.find(product => product.id == id)
+         return res.render("../products/editar-producto",{product});
     },
     crearProducto: (req,res)=>{
-        return res.render(path.join('./products/crear-producto'));
+        return res.render("./products/crear-producto");
     },
     guardarProducto:(req,res)=>{
         return res.send("Producto creado");
