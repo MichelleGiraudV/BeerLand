@@ -1,35 +1,32 @@
-[{
-    "id": 1,
+[
+  {
+    "id_user": 1,
     "first_name": "Cecilla",
     "last_name": "Bridel",
     "email": "cbridel0@aboutads.info",
     "password": "dsSsZM8c9",
-    "category": "user",
-    "image": "user_1.jpg"
+    "category": "user"
   }, {
-    "id": 2,
+    "id_user": 2,
     "first_name": "Bogey",
     "last_name": "MacKnocker",
     "email": "bmacknocker1@bbc.co.uk",
     "password": "otLgQ4",
-    "category": "user",
-    "image": "user_2.jpg"
+    "category": "user"
   }, {
-    "id": 3,
+    "id_user": 3,
     "first_name": "Silvain",
     "last_name": "Epton",
     "email": "septon2@merriam-webster.com",
     "password": "73cJ4wY1tj",
     "category": "user",
-    "image": "user_3.jpg"
   }, {
-    "id": 4,
+    "id_user": 4,
     "first_name": "Patsy",
     "last_name": "Wolverson",
     "email": "pwolverson3@qq.com",
     "password": "i5UQCc0knfvD",
     "category": "user",
-    "image": "user_4.jpg"
   }, {
     "id": 5,
     "first_name": "Michell",
@@ -158,4 +155,5 @@
     "password": "fDnZdaAYyR",
     "category": "user",
     "image": "user_20.jpg"
-  }]
+  }
+]

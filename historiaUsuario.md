@@ -62,8 +62,8 @@ Como usuario quiero agregar nombre de usuario, correo, y contraseña para poder 
 
 6. Página: creación y edición
 Archivos:
-crear-producto.ejs
-crear-producto.css
+crear.ejs
+crear.css
 editar-producto.ejs
 editar-producto.css
 

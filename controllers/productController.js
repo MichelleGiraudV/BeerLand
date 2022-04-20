@@ -1,69 +1,46 @@
+//access and interact with the file system.
+const fs = require('fs');
 const path = require('path');
+//guardar la ruta hacia donde est a la base de datos
+const productsFilePath = path.join(__dirname,'../data/products.json');
+// readFileSync-- read the file and return its content.
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const controller = {
     detalleDeProducto: (req,res)=>{
-        res.render(path.join('./products/detalle-producto'));
+        res.render(path.join('./products/detalle-producto'),{products});
     },
     ListaProductos: (req,res)=>{
-        const products = [
-            {
-                Nombre:"Producto1",
-                Precio:"$50.000",
-                Estrellas:"5" 
-            },
-            {
-                Nombre:"Producto2",
-                Precio:"$50.000",
-                Estrellas:"5" 
-            },
-            {
-                Nombre:"Producto3",
-                Precio:"$50.000",
-                Estrellas:"4" 
-            },
-            {
-                Nombre:"Producto4",
-                Precio:"$50.000",
-                Estrellas:"5" 
-            },
-            {
-                Nombre:"Producto5",
-                Precio:"$50.000",
-                Estrellas:"5" 
-            },
-            {
-                Nombre:"Producto6",
-                Precio:"$50.000",
-                Estrellas:"5" 
-            },
-            {
-                Nombre:"Producto7",
-                Precio:"$50.000",
-                Estrellas:"4" 
-            },
-            {
-                Nombre:"Producto8",
-                Precio:"$50.000",
-                Estrellas:"5" 
-            },
-            {
-                Nombre:"Producto8",
-                Precio:"$50.000",
-                Estrellas:"5" 
-            }
-        ];
-        res.render("./products/ListaProductos",{products: products});
-
-        res.render(path.join('./products/ListaProductos'));
+        return res.render("./products/ListaProductos",{products});
     },
     carritoDeCompras: (req,res)=>{
         res.render(path.join('./products/carrito-de-compras'));
     },
     editarProducto: (req,res)=>{
-        res.render(path.join('./products/editar-producto'));
+         //guardar el id
+         const id = req.params.id;
+         //obtenemos un array de porductos
+         const product= products.find(product=>product.id == id)
+         return res.render(path.join('./products/editar-producto'),{product});
     },
     crearProducto: (req,res)=>{
         res.render(path.join('./products/crear-producto'));
+    },
+    guardarProducto:(req,res)=>{
+        res.send("Producto creado");
+    },
+    detallesDeUnProducto: (req,res)=>{
+        //guardar el id
+        const id = req.params.id;
+        //obtenemos un array de porductos
+        const product= products.find(product=>product.id == id)
+        return res.render(path.join('./products/detalle-producto'),{product});
+    },
+    actualizacionProducto: (req,res)=>{
+        res.render("producto editado");
+    },
+    eliminar: (req,res)=>{
+        res.render("producto eliminado");
     }
 
 }

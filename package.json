@@ -19,6 +19,7 @@
   "homepage": "https://github.com/MichelleGiraudV/Pet_Land#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "method-override": "^3.0.0"
   }
 }
