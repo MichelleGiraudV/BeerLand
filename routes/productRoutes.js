@@ -10,18 +10,20 @@ router.use(methodOverride('_method'));
 
 router.get('/detalle-producto', productController.detalleDeProducto);
 
-router.get('/ListaProductos', productController.ListaProductos);
+
 
 router.get('/carrito-de-compras', productController.carritoDeCompras);
 
-
+//* 1
+//listado de porductos
+router.get('/ListaProductos', productController.ListaProductos);
 //* 2
 //Render la vista GET 
 router.get('/crear', productController.crearProducto);
 //* 3
 //Detalle de producto particular
 router.get('/:id/',productController.detallesDeUnProducto);
-//*4 
+//* 4 
 //Acción de creación (a donde se envía el formulario)
 router.post('/',productController.guardarProducto);
 //* 5 

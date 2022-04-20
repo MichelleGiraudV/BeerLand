@@ -97,35 +97,38 @@
         <section class="columna">
             <div class="fila">
                 <!--Fila 1 Producto 1-->
-                <div class="producto1">
-                    <div class="imagenProducto">
-                        <a href="/product/detalle-producto">
-                            <img src="/img/Cervezas/heineken.png">
-                        </a>
-                    </div>
-                    <div class="descripcion">
-                        <div class="estrellas">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4>Producto</h4>
-                        <p>$50.000</p>
-                        <div class="iconosAbajo">
-                            <a href="#">
-                                <i class="fa-regular fa-heart"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-share-nodes"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-cart-shopping"></i>
+                <% Alemania.forEach(product =>{%>
+                    <div class="producto1">
+                        <div class="imagenProducto">
+                            <a href="/product/detalle-producto">
+                                <img src="/img/Cervezas/<%= product.image %> >">
                             </a>
                         </div>
+                        <div class="descripcion">
+                            <div class="estrellas"> 
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h4><%= product.prod_name %></h4>
+                            <p><%= product.price %></p>
+                            <div class="iconosAbajo">
+                                <a href="#">
+                                    <i class="fa-regular fa-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                <%})%>
+                
                 <!--Fila 1 Producto 2-->
                 <div class="producto2">
                     <div class="imagenProducto">

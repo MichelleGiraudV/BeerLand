@@ -1,7 +1,7 @@
 //access and interact with the file system.
 const fs = require('fs');
 const path = require('path');
-//guardar la ruta hacia donde est a la base de datos
+//guardar la ruta hacia donde esta la base de datos
 const productsFilePath = path.join(__dirname,'../data/products.json');
 // readFileSync-- read the file and return its content.
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -11,7 +11,14 @@ const controller = {
         res.render(path.join('./products/detalle-producto'),{products});
     },
     ListaProductos: (req,res)=>{
-        return res.render("./products/ListaProductos",{products});
+        const Alemania = products.filter(product => product.country == 'Alemania');
+        const PaisesBajos = products.filter(product => product.country == 'Paises Bajos');
+        const Bélgica = products.filter(product => product.country == 'Bélgica');
+        const Inglaterra = products.filter(product => product.country == 'Inglaterra');
+        const Mexico = products.filter(product => product.country == 'México');
+        const Argentina = products.filter(product => product.country == 'Argentina');
+        const Espana = products.filter(product => product.country == 'España');
+        return res.render("./products/ListaProductos",{Alemania,PaisesBajos,Bélgica,Inglaterra,Mexico,Argentina,Espana});
     },
     carritoDeCompras: (req,res)=>{
         res.render(path.join('./products/carrito-de-compras'));
@@ -24,10 +31,10 @@ const controller = {
          return res.render(path.join('./products/editar-producto'),{product});
     },
     crearProducto: (req,res)=>{
-        res.render(path.join('./products/crear-producto'));
+        return res.render(path.join('./products/crear-producto'));
     },
     guardarProducto:(req,res)=>{
-        res.send("Producto creado");
+        return res.send("Producto creado");
     },
     detallesDeUnProducto: (req,res)=>{
         //guardar el id
@@ -37,10 +44,10 @@ const controller = {
         return res.render(path.join('./products/detalle-producto'),{product});
     },
     actualizacionProducto: (req,res)=>{
-        res.render("producto editado");
+        return res.render("producto editado");
     },
     eliminar: (req,res)=>{
-        res.render("producto eliminado");
+        return res.render("producto eliminado");
     }
 
 }
