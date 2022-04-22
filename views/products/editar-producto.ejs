@@ -28,31 +28,33 @@
                 <form action="/product/<%= product.id %>?_method=PUT" method="POST">
                     <div class="container">
                         <h2>Editar producto:</h2>
-                        <input type="text" placeholder="Nombre del producto" name="nombre" id="productoNombre"
+                        <input type="text" placeholder="Nombre del producto" name="productoNombre" id="productoNombre"
                             value="<%= product.prod_name %>" required><br>
-                        <input type="text" placeholder="ID" name="id" id="productoId" required
+                        <input type="text" placeholder="ID" name="productoId" id="productoId" required
                             value="<%=product.id %>"><br>
-                        <input type="text" placeholder="Categoria" name="categoria" id="productoCategoria"
+                        <input type="text" placeholder="Categoria" name="productoCategoria" id="productoCategoria"
                             value="<%=product.category %>" required><br>
-                        <input type="text" placeholder="País" name="pais" id="productoPais"
+                        <input type="text" placeholder="País" name="productoPais" id="productoPais"
                             value="<%=product.country %>" required><br>
-                        <input type="text" placeholder="Descripción" name="descripcion" id="productoDescripcion"
+                        <input type="text" placeholder="Descripción" name="productoDescripcion" id="productoDescripcion"
                             value="<%=product.description %>" required><br>
-                        <input type="text" placeholder="Puntuación" name="puntuacion" id="productoPuntuacion"
+                        <input type="text" placeholder="Puntuación" name="productoPuntuacion" id="productoPuntuacion"
                             value="<%=product.rating %>" required><br>
-                        <input type="text" placeholder="Precio" name="precio" id="productoPrecio"
+                        <input type="text" placeholder="Precio" name="productoPrecio" id="productoPrecio"
                             value="<%=product.price %>" required><br>
                         <p><a href="#">Editar imagen del producto</a></p><br>
                         <hr><br></br>
                         <button type="submit" class="registerbtn">Guardar cambio</button>
-                    </div>
                 </form>
-
-                <form method="POST" action="/product/<%= product.id %>?_method=DELETE">
                     <div>
+                <p> </p>
+                <form method="POST" action="/product/<%= product.id %>?_method=DELETE">
                         <button type="submit" class="registerbtn">Eliminar producto</button>
-                    </div>
                 </form>
+                    </div>
+                
+
+                
             </body>
         </main>
 </body>
