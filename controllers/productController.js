@@ -48,7 +48,7 @@ const controller = {
         // products.forEach(product =>{
         //     if (product.id == id ){
         //         product.prod_name = req.body.productoNombre;
-        //         //product.rating = req.body.id;
+        //         //product.rating = req.body.productRating;
         //         product.description = req.body.productoDescripcion;
         //         product.price = req.body.productoPrecio;
         //         product.category = req.body.productoCategoria;
