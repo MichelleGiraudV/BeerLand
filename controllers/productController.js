@@ -57,11 +57,7 @@ const controller = {
         return res.send("producto editado");
     },
     eliminar: (req,res)=>{
-        //guardar el id
-        const id = req.params.id;
-        //obtenemos un array de porductos
-        const product= products.find(product=>product.id == id)
-        return res.render(("producto eliminado"),{product});
+        return res.send(("producto eliminado"),{product});
     }
 
 }
