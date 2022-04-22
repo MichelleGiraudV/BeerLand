@@ -1,7 +1,6 @@
 //access and interact with the file system.
 const fs = require('fs');
 const path = require('path');
-let contacts = require('../data/products.json');
 //guardar la ruta hacia donde esta la base de datos
 const productsFilePath = path.join(__dirname,'../data/products.json');
 // readFileSync-- read the file and return its content.
@@ -41,13 +40,21 @@ const controller = {
         //guardar el id
         const id = req.params.id;
         //obtenemos un array de porductos
-        const product= products.find(product=>product.id == id)
+        const product = products.find(product=>product.id == id)
         return res.render(path.join('./products/detalle-producto'),{product});
     },
     actualizacionProducto: (req,res)=>{
-        console.log('req.params.id', req.params.id);
-        res.json(products);
-        return res.render("producto editado");
+        const id = req.params.id;
+        // products.forEach(product =>{
+        //     if (product.id == id ){
+        //         product.prod_name = req.body.productoNombre;
+        //         //product.rating = req.body.id;
+        //         product.description = req.body.productoDescripcion;
+        //         product.price = req.body.productoPrecio;
+        //         product.category = req.body.productoCategoria;
+                // product.image = req.body.genero;
+                // product.country = req.body.genero;
+        return res.send("producto editado");
     },
     eliminar: (req,res)=>{
         //guardar el id
