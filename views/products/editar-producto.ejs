@@ -18,14 +18,15 @@
         <main>
 
             <body>
-                <form action="/action_page.php">
+                <!-- /user/register-->
+                <form action="/:id?_method=PUT" method="POST">
                     <div class="container">
                         <h2>Editar producto:</h2>
-                        <input type="text" placeholder="Nombre del producto" name="email" id="email" required><br>
-                        <input type="text" placeholder="ID" name="email" id="email" required><br>
-                        <input type="text" placeholder="Categoria" name="email" id="email" required><br>
-                        <input type="text" placeholder="Descripción" name="email" id="email" required><br>
-                        <input type="text" placeholder="Precio" name="email" id="email" required><br>
+                        <input type="text" placeholder="Nombre del producto" name="nombre" id="productoNombre" value="<%= product.prod_name %>" required><br>
+                        <input type="text" placeholder="ID" name="id" id="productoId" required value="<%=product.id %>"><br>
+                        <input type="text" placeholder="Categoria" name="categoria" id="productoCategoria" value="<%=product.category %>" required><br>
+                        <input type="text" placeholder="Descripción" name="descripcion" id="productoDescripcion" value="<%=product.description %>" required><br>
+                        <input type="text" placeholder="Precio" name="precio" id="productoPrecio" value="<%=product.price %>" required><br>
                         <p><a href="#">Editar imagen del producto</a></p><br>
                         <hr>
                         <button type="submit" class="registerbtn">Guardar cambio</button>

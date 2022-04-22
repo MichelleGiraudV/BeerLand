@@ -6,6 +6,10 @@ const PORT = process.env.PORT || 3030;
 const mainRouter = require("./routes/mainRoutes");
 const productRouter = require("./routes/productRoutes");
 const userRouter = require("./routes/userRoutes");
+//methodOverride
+const methodOverride = require('method-override');
+//para no pisar el POST con el PUT y DELETE
+app.use(methodOverride('_method'));
 
 app.use(express.static(path.join(__dirname,'public')));
 //ejs
