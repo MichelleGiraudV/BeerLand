@@ -26,7 +26,7 @@
         <!-- imagenes  -->
         <!-- <div id="main"> -->
         <section id="imagenes-producto">
-            <h4>Productos > Paises Bajos > Heineken</h4>
+            <h4>Productos > <%= product.country %> > <%= product.prod_name %></h4>
             <div id="imagenPrincipal">
                 <img src="/img/Cervezas/heineken.png" alt="">
             </div>
@@ -56,7 +56,7 @@
         <!-- descripcion -->
 
         <section id="descripcion-producto">
-            <h2>Heineken</h2>
+            <h2><%= product.prod_name %></h2>
             <div class="estrellas" style="color: gold;">
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
@@ -64,10 +64,11 @@
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
             </div>
-            <h4 style="color: rgba(255, 255, 255, 0.8); margin-bottom: 0px;">reviews (1)</h4>
-            <p>Heineken Pilsener, conocida simplemente como Heineken,
-                es una cerveza con 5,0 % alc. vol., elaborada por
-                la cervecería neerlandesa Heineken International.</p>
+            <h4 style="color: rgba(255, 255, 255, 0.8); margin-bottom: 0px;">reviews (1)</h4><br>
+            <p> Tipo: <%= product.category %><br><br>
+                País: <%= product.country %>
+            </p>
+            <p><%= product.description %></p>
 
         </section>
 
@@ -90,7 +91,7 @@
                             <option value="azul">4</option>
                         </select>
                     </div>
-                    <h2 style="font-weight:normal; opacity: 0.8;">$200 MXN</h2>
+                    <h2 style="font-weight:normal; opacity: 0.8;"><%= product.price %> MXN</h2>
                     <div style="display: flex; align-items: center;">
                         <h3 style="color: white;">Metodo de pago: </h3>
                         <select name="escoje-metodo" id="selectorMetodo">

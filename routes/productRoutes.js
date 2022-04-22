@@ -26,10 +26,8 @@ router.post('/',productController.guardarProducto);
 //mostrar el formulario
 router.get('/:id/editar-producto', productController.editarProducto);
 //* 6 
-//! FALTA
 router.put('/:id',productController.actualizacionProducto);
 //*7
-//! FALTA
 router.delete('/:id',productController.eliminar);
 
 module.exports = router;

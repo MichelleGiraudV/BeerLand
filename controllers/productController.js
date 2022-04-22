@@ -44,21 +44,10 @@ const controller = {
         return res.render(path.join('./products/detalle-producto'),{product});
     },
     actualizacionProducto: (req,res)=>{
-        const id = req.params.id;
-        // products.forEach(product =>{
-        //     if (product.id == id ){
-        //         product.prod_name = req.body.productoNombre;
-        //         //product.rating = req.body.id;
-        //         product.description = req.body.productoDescripcion;
-        //         product.price = req.body.productoPrecio;
-        //         product.category = req.body.productoCategoria;
-                // product.image = req.body.genero;
-                // product.country = req.body.genero;
         return res.send("producto editado");
     },
     eliminar: (req,res)=>{
-        return res.send(("producto eliminado"),{product});
+        return res.send("producto eliminado");
     }
-
 }
 module.exports = controller;
