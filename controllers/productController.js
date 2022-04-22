@@ -1,6 +1,7 @@
 //access and interact with the file system.
 const fs = require('fs');
 const path = require('path');
+let contacts = require('../data/products.json');
 //guardar la ruta hacia donde esta la base de datos
 const productsFilePath = path.join(__dirname,'../data/products.json');
 // readFileSync-- read the file and return its content.
@@ -44,6 +45,8 @@ const controller = {
         return res.render(path.join('./products/detalle-producto'),{product});
     },
     actualizacionProducto: (req,res)=>{
+        console.log('req.params.id', req.params.id);
+        res.json(products);
         return res.render("producto editado");
     },
     eliminar: (req,res)=>{
