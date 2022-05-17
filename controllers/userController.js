@@ -21,10 +21,9 @@ const controller = {
         res.render(path.join('./users/registro2'));
     },
     guardarRegistro:(req,res)=>{
-        console.log(req.file);
         let group = req.body;
         group.image = req.file.filename;
-        groupsModel.create(group);
+        groupId_user = groupsModel.create(group);
         return res.send("Registro creado");
     }
 }
