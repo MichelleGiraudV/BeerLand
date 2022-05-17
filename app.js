@@ -1,4 +1,5 @@
 const express = require('express');
+const bcrypt = require('bcryptjs');
 const { dirname } = require('path');
 const app = express();
 const path = require('path');
