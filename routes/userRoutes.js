@@ -16,8 +16,7 @@ const storage = multer.diskStorage({
     },
     filename: (req, file, callback) =>
     {
-        console.log(file);
-        let imageUserNewName = "userPic" + Date.now() + path.extname(file.originalname);
+        let imageUserNewName = "userProfilePicture-" + Date.now() + path.extname(file.originalname);
         callback(null,imageUserNewName);
     }
 })

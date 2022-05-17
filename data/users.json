@@ -1,61 +1,93 @@
-[{
-  "id_user": 1,
+[
+ {
+  "id_user": 0,
   "first_name": "Aleece",
   "last_name": "Christopherson",
   "email": "achristopherson0@uol.com.br",
-  "password": "MQbnKC"
-}, {
-  "id_user": 2,
+  "password": "MQbnKC",
+  "image": null
+ },
+ {
+  "id_user": 0,
   "first_name": "Paulie",
   "last_name": "Szymanowicz",
   "email": "pszymanowicz1@e-recht24.de",
-  "password": "6ABQEdUBrey2"
-}, {
-  "id_user": 3,
+  "password": "6ABQEdUBrey2",
+  "image": null
+ },
+ {
+  "id_user": 0,
   "first_name": "Symon",
   "last_name": "Batchley",
   "email": "sbatchley2@sphinn.com",
-  "password": "NMTuabMEwsh"
-}, {
-  "id_user": 4,
+  "password": "NMTuabMEwsh",
+  "image": null
+ },
+ {
+  "id_user": 0,
   "first_name": "Alika",
   "last_name": "Jancic",
   "email": "ajancic3@homestead.com",
-  "password": "MTxu10w0wpq"
-}, {
-  "id_user": 5,
+  "password": "MTxu10w0wpq",
+  "image": null
+ },
+ {
+  "id_user": 0,
   "first_name": "Debora",
   "last_name": "Humbee",
   "email": "dhumbee4@archive.org",
-  "password": "O5h5Vbyeemwb"
-}, {
-  "id_user": 6,
+  "password": "O5h5Vbyeemwb",
+  "image": null
+ },
+ {
+  "id_user": 0,
   "first_name": "Filippa",
   "last_name": "Garnett",
   "email": "fgarnett5@icio.us",
-  "password": "VRwCKlE9vj"
-}, {
-  "id_user": 7,
+  "password": "VRwCKlE9vj",
+  "image": null
+ },
+ {
+  "id_user": 0,
   "first_name": "Olivero",
   "last_name": "O'Duggan",
   "email": "ooduggan6@diigo.com",
-  "password": "FaGeE4TZ"
-}, {
-  "id_user": 8,
+  "password": "FaGeE4TZ",
+  "image": null
+ },
+ {
+  "id_user": 0,
   "first_name": "Sheffy",
   "last_name": "Arnaut",
   "email": "sarnaut7@rakuten.co.jp",
-  "password": "HDIcQOa1l4"
-}, {
-  "id_user": 9,
+  "password": "HDIcQOa1l4",
+  "image": null
+ },
+ {
+  "id_user": 0,
   "first_name": "Orly",
   "last_name": "Dunnan",
   "email": "odunnan8@smh.com.au",
-  "password": "5uU6VArbqWFS"
-}, {
-  "id_user": 10,
+  "password": "5uU6VArbqWFS",
+  "image": null
+ },
+ {
+  "id_user": 0,
   "first_name": "Kayley",
   "last_name": "Headly",
   "email": "kheadly9@pbs.org",
-  "password": "TZAFAV6g"
-}]
+  "password": "TZAFAV6g",
+  "image": null
+ },
+ {
+  "firstName": "Michelle",
+  "lastName": "Giraud",
+  "emailUser": "michelle@gmail.com",
+  "psw-repeatUser": "Michelle",
+  "email": "2323",
+  "psw": "Fuentes",
+  "psw-repeat": "343434",
+  "image": "userProfilePicture-1652760043578.png",
+  "id": null
+ }
+]
