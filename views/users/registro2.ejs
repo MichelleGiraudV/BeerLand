@@ -18,17 +18,22 @@
         <main>
 
             <body>
-                <form action="/action_page.php">
+                <form action="/user/registro2"  method="POST" enctype="multipart/form-data">
                 <div class="container">
                     <h2>Registrarse</h2>
-                    <input type="text" placeholder="Nombre de usuario" name="email" id="email" required><br>
-                    <input type="password" placeholder="Email" name="psw" id="psw" required><br>
-                    <input type="password" placeholder="Password" name="psw-repeat" id="psw-repeat" required>
+                    <input type="text" placeholder="Nombre" name="firstName" id="firstName" required><br>
+                    <input type="text" placeholder="Apellido" name="lastName" id="lastName" required><br>
+                    <input type="text" placeholder="Email" name="emailUser" id="emailUser" required><br>
+                    <input type="password" placeholder="Password" name="psw-repeatUser" id="psw-repeatUser" required>
+                    <div class="control">
+                        <br>
+                        <input type="file" name="UserImage" id="UserImage">
+                    </div>
                     <br><hr>
                     <h2>Ingrese sus datos</h2>
                     <input type="text" placeholder="Número de documento" name="email" id="email" required><br>
-                    <input type="password" placeholder="Dirección" name="psw" id="psw" required><br>
-                    <input type="password" placeholder="Celular" name="psw-repeat" id="psw-repeat" required><br>
+                    <input type="text" placeholder="Dirección" name="psw" id="psw" required><br>
+                    <input type="text" placeholder="Celular" name="psw-repeat" id="psw-repeat" required><br>
                     <hr>
                     <button type="submit" class="registerbtn">Guardar información</button>
                 </div>

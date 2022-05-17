@@ -15,6 +15,9 @@ const controller = {
     },
     registro2: (req,res)=>{
         res.render(path.join('./users/registro2'));
+    },
+    guardarRegistro:(req,res)=>{
+        return res.send("Registro creado");
     }
 }
 module.exports = controller;

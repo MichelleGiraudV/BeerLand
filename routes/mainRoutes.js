@@ -1,7 +1,7 @@
 //HOME RUTAS PRINCIPALES
 const express =require('express');
 const router = express.Router();
-const multer = requiere('multer');
+const multer = require('multer');
 const path = require('path');
 const mainController = require("../controllers/mainController");
 //__dirname estoy dentro de routes
