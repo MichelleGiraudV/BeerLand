@@ -1,4 +1,5 @@
 const express =require('express');
+const bcrypt = require('bcryptjs');
 const router = express.Router();
 const path = require('path');
 const userController = require("../controllers/userController");
@@ -29,7 +30,6 @@ router.get('/login', userController.login);
 router.get('/registro2',userController.registro2);
 
 router.post('/registro2', upload.single('UserImage') ,userController.guardarRegistro);
-
 
 
 module.exports = router;
