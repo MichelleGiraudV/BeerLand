@@ -8,6 +8,7 @@ const multer = require('multer');
 const methodOverride = require('method-override');
 const { registro } = require('../controllers/userController');
 var app = express()
+let historyDBMiddelware = require('../middelwares/historyDBMiddelware');
 
 const storage = multer.diskStorage({
     destination: (req, file, callback) => 
@@ -28,7 +29,7 @@ router.get('/login', userController.login);
 
 router.get('/registro2',userController.registro2);
 
-router.post('/registro2', upload.single('UserImage') ,userController.guardarRegistro);
+router.post('/registro2',historyDBMiddelware, upload.single('UserImage') ,userController.guardarRegistro);
 
 
 module.exports = router;
