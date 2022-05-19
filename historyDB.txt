@@ -1,0 +1,1 @@
+Se creo un resgistro al ingresar en la página /registro2

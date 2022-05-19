@@ -113,5 +113,13 @@
   "psw-repeatUser": "jsahfk",
   "image": "userProfilePicture-1652761341031.png",
   "id": 3
+ },
+ {
+  "firstName": "Michelle",
+  "lastName": "Giraud",
+  "emailUser": "michellegivi@gmail.com",
+  "psw-repeatUser": "12345678",
+  "image": "userProfilePicture-1652921407274.png",
+  "id": 4
  }
 ]
