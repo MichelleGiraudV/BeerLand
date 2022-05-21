@@ -17,7 +17,9 @@ main {
     display: flex;
     flex-direction: column;
 }
-
+.error {
+  color: red;
+}
 * {
     box-sizing: border-box;
   }

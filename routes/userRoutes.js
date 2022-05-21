@@ -7,8 +7,9 @@ const multer = require('multer');
 //methodOverride
 const methodOverride = require('method-override');
 const { registro } = require('../controllers/userController');
-var app = express()
+const { body } = require('express-validator');
 let historyDBMiddelware = require('../middelwares/historyDBMiddelware');
+var app = express()
 
 const storage = multer.diskStorage({
     destination: (req, file, callback) => 
@@ -21,6 +22,13 @@ const storage = multer.diskStorage({
         callback(null,imageUserNewName);
     }
 })
+const validations= [
+    //notEmpty no puede estar vacio
+    body('firstName').notEmpty().withMessage('Tienes que escribir un nombre'),
+    body('lastName').notEmpty().withMessage('Tienes que escribir un apellido'),
+    body('emailUser').notEmpty().withMessage('Tienes que escribir un correo'),
+    body('password').notEmpty().withMessage('Tienes que escribir una contraseña'),
+]
 //ejecucion de multer
 const upload = multer({storage});
 
@@ -29,7 +37,7 @@ router.get('/login', userController.login);
 
 router.get('/registro2',userController.registro2);
 
-router.post('/registro2',historyDBMiddelware, upload.single('UserImage') ,userController.guardarRegistro);
+router.post('/registro2',historyDBMiddelware, upload.single('UserImage'),validations,userController.guardarRegistro);
 
 
 module.exports = router;
