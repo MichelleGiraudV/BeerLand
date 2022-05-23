@@ -22,22 +22,40 @@ const storage = multer.diskStorage({
         callback(null,imageUserNewName);
     }
 })
+//ejecucion de multer
+const upload = multer({storage});
+
 const validations= [
     //notEmpty no puede estar vacio
     body('firstName').notEmpty().withMessage('Tienes que escribir un nombre'),
     body('lastName').notEmpty().withMessage('Tienes que escribir un apellido'),
-    body('emailUser').notEmpty().withMessage('Tienes que escribir un correo'),
+    body('emailUser').notEmpty().withMessage('Tienes que escribir un correo').bail()
+        .isEmail().withMessage('Debes de escribir un formato de correo válido'),
     body('password').notEmpty().withMessage('Tienes que escribir una contraseña'),
+    body('userImage').custom((value, { req }) => {
+		let file = req.file;
+		let acceptedExtensions = ['.jpg', '.png', '.gif'];
+		
+		if (!file) {
+			throw new Error('Tienes que subir una imagen');
+		} else {
+			let fileExtension = path.extname(file.originalname);
+			if (!acceptedExtensions.includes(fileExtension)) {
+				throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')}`);
+			}
+		}
+
+		return true;
+	})
 ]
-//ejecucion de multer
-const upload = multer({storage});
+
 
 //__dirname estoy dentro de routes
 router.get('/login', userController.login);
 
 router.get('/registro2',userController.registro2);
 
-router.post('/registro2',historyDBMiddelware, upload.single('UserImage'),validations,userController.guardarRegistro);
+router.post('/registro2',historyDBMiddelware, upload.single('userImage'),validations,userController.guardarRegistro);
 
 
 module.exports = router;

@@ -161,5 +161,13 @@
   "psw-repeatUser": "",
   "image": "userProfilePicture-1653148909827.png",
   "id": 9
+ },
+ {
+  "firstName": "Michelle",
+  "lastName": "Giraud",
+  "emailUser": "michelle@gmail.com",
+  "password": "asddsad",
+  "image": "userProfilePicture-1653329913304.png",
+  "id": 10
  }
 ]

@@ -47,7 +47,12 @@
                     <%}%>
                     <div class="control">
                         <br>
-                        <input type="file" name="UserImage" id="UserImage">
+                        <input type="file" name="userImage" id="userImage" class="form-control <%= locals.errors && errors.avatar ? 'is-invalid' : null %>">
+                        <% if(locals.errors  && errors.userImage){%>
+                            <div class="error">
+                                <%= errors.userImage.msg %>
+                            </div>
+                        <%}%>
                     </div>
                     <br>
                     <button type="submit" class="registerbtn">Guardar información</button>
