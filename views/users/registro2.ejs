@@ -21,13 +21,38 @@
                 <form action="/user/registro2"  method="POST" enctype="multipart/form-data">
                 <div class="container">
                     <h2>Registrarse</h2>
-                    <input type="text" placeholder="Nombre" name="firstName" id="firstName" required><br>
-                    <input type="text" placeholder="Apellido" name="lastName" id="lastName" required><br>
-                    <input type="text" placeholder="Email" name="emailUser" id="emailUser" required><br>
-                    <input type="password" placeholder="Password" name="psw-repeatUser" id="psw-repeatUser" required>
+                    <input type="text" placeholder="Nombre" name="firstName" id="firstName" value="<%= locals.oldData ? oldData.firstName : null %>"><br>
+                    <% if(locals.errors  && errors.firstName) {%>
+                        <div class="error">
+                            <%= errors.firstName.msg %>
+                        </div>
+                    <%}%>
+                    <input type="text" placeholder="Apellido" name="lastName" id="lastName" value="<%= locals.oldData ? oldData.lastName : null %>"><br>
+                    <% if(locals.errors  && errors.lastName){%>
+                        <div class="error">
+                            <%= errors.lastName.msg %>
+                        </div>
+                    <%}%>
+                    <input type="text" placeholder="Email" name="emailUser" id="emailUser" value="<%= locals.oldData ? oldData.emailUser : null %>"><br>
+                    <% if(locals.errors  && errors.emailUser){%>
+                        <div class="error">
+                            <%= errors.emailUser.msg %>
+                        </div>
+                    <%}%>
+                    <input type="password" placeholder="Password" name="password" id="password" value="<%= locals.oldData ? oldData.password : null %>">
+                    <% if(locals.errors  && errors.password){%>
+                        <div class="error">
+                            <%= errors.password.msg %>
+                        </div>
+                    <%}%>
                     <div class="control">
                         <br>
-                        <input type="file" name="UserImage" id="UserImage">
+                        <input type="file" name="userImage" id="userImage" class="form-control <%= locals.errors && errors.avatar ? 'is-invalid' : null %>">
+                        <% if(locals.errors  && errors.userImage){%>
+                            <div class="error">
+                                <%= errors.userImage.msg %>
+                            </div>
+                        <%}%>
                     </div>
                     <br>
                     <button type="submit" class="registerbtn">Guardar información</button>

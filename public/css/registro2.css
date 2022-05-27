@@ -17,7 +17,9 @@ main {
     display: flex;
     flex-direction: column;
 }
-
+.error {
+  color: red;
+}
 * {
     box-sizing: border-box;
   }
@@ -28,7 +30,6 @@ main {
     margin-top: 70px;
     padding: 16px;
     background-color: white;
-
   }
   
   input[type=text] {

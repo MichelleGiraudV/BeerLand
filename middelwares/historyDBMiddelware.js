@@ -2,7 +2,8 @@
 const fs =require('fs');
 
 function historyDBMiddelware(req,res,next){
-    fs.appendFileSync('historyDB.txt','Se creo un resgistro al ingresar en la página ' + req.url);
+    fs.appendFileSync('historyDB.txt','\n Se creo un resgistro al ingresar en la página ' + req.url);
+    console
     next();
 }
 
