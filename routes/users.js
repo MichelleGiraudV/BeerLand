@@ -7,6 +7,15 @@ const User = {
         return JSON.parse(fs.readFileSync(this.fileName, 'utf-8'));
     },
 
+    generateId: function() {
+        let allUsers = this.findAll();
+        let lastUser = allUsers.pop();
+        if (lastUser) {
+            return lastUser.id_user + 1;
+        }
+        return 1;
+    },
+
     findAll: function() {
         return this.getData();
     },
@@ -17,20 +26,29 @@ const User = {
         return foundUserById;
     },
 
-    findByEmail: function(email) {
+    findByField: function(field, text) {
         let allUsers = this.findAll();
-        let foundUserByEmail = allUsers.find(userByEmail => userByEmail.email == email);
-        return foundUserByEmail;
+        let foundUserByField = allUsers.find(userByField => userByField[field] == text);
+        return foundUserByField;
     },
 
-    findByPassword: function(password) {
+    create: function(userData) {
         let allUsers = this.findAll();
-        let foundUserByPassword = allUsers.find(userByPassword => userByPassword.password == password);
-        return foundUserByPassword;
+        let newUser = {
+            id: this.generateId(),
+            ...userData
+        }
+        allUsers.push(newUser);
+        fs.writeFileSync(this.fileName, JSON.stringify(allUsers, null, ' '));
+        return newUser;
     },
 
-
-
+    delete: function(id_user) {
+        let allUsers = this.findAll();
+        let finalUsers = allUsers.filter(userToDelete => userToDelete.id_user != id_user);
+        fs.writeFileSync(this.fileName, JSON.stringify(finalUsers, null, ' '));
+        return true;
+    },
 } 
 
-console.log(User.findByEmail("pszymanowicz1@e-recht24.de"));
+module.exports = User;
