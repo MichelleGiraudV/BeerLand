@@ -23,11 +23,14 @@ const controller = {
     },
     guardarRegistro:(req,res)=>{
         const resultValidation = validationResult(req);
-        if(resultValidation.errors.length > 0){
-            return res.render(path.join('./users/registro2'), {
-                errors: resultValidation.mapped()
-            });
-        }
+        
+        if (resultValidation.errors.length > 0) {
+			return res.render(path.join('./users/registro2'), {
+				errors: resultValidation.mapped(),
+                oldData: req.body
+			});
+		}
+
         let group = req.body;
         group.image = req.file.filename;
         groupId_user = groupsModel.create(group);

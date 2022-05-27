@@ -12,12 +12,10 @@ let historyDBMiddelware = require('../middelwares/historyDBMiddelware');
 var app = express()
 
 const storage = multer.diskStorage({
-    destination: (req, file, callback) => 
-    {
+    destination: (req, file, callback) => {
         callback(null,path.join(__dirname,'../public/img/users'));
     },
-    filename: (req, file, callback) =>
-    {
+    filename: (req, file, callback) => {
         let imageUserNewName = "userProfilePicture-" + Date.now() + path.extname(file.originalname);
         callback(null,imageUserNewName);
     }

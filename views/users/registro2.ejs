@@ -21,25 +21,25 @@
                 <form action="/user/registro2"  method="POST" enctype="multipart/form-data">
                 <div class="container">
                     <h2>Registrarse</h2>
-                    <input type="text" placeholder="Nombre" name="firstName" id="firstName"><br>
-                    <% if(locals.errors  && errors.firstName){%>
+                    <input type="text" placeholder="Nombre" name="firstName" id="firstName" value="<%= locals.oldData ? oldData.firstName : null %>"><br>
+                    <% if(locals.errors  && errors.firstName) {%>
                         <div class="error">
                             <%= errors.firstName.msg %>
                         </div>
                     <%}%>
-                    <input type="text" placeholder="Apellido" name="lastName" id="lastName"><br>
+                    <input type="text" placeholder="Apellido" name="lastName" id="lastName" value="<%= locals.oldData ? oldData.lastName : null %>"><br>
                     <% if(locals.errors  && errors.lastName){%>
                         <div class="error">
                             <%= errors.lastName.msg %>
                         </div>
                     <%}%>
-                    <input type="text" placeholder="Email" name="emailUser" id="emailUser"><br>
+                    <input type="text" placeholder="Email" name="emailUser" id="emailUser" value="<%= locals.oldData ? oldData.emailUser : null %>"><br>
                     <% if(locals.errors  && errors.emailUser){%>
                         <div class="error">
                             <%= errors.emailUser.msg %>
                         </div>
                     <%}%>
-                    <input type="password" placeholder="Password" name="password" id="password">
+                    <input type="password" placeholder="Password" name="password" id="password" value="<%= locals.oldData ? oldData.password : null %>">
                     <% if(locals.errors  && errors.password){%>
                         <div class="error">
                             <%= errors.password.msg %>
