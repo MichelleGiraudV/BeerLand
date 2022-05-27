@@ -2,7 +2,7 @@
 const fs =require('fs');
 
 function historyMiddelware(req,res,next){
-    fs.appendFileSync('history.txt','Se ingreso en la página ' + req.url);
+    fs.appendFileSync('history.txt','\n Se ingreso en la página ' + req.url);
     next();
 }
 

@@ -1,5 +1,4 @@
 //access and interact with the file system.
-const { groupEnd } = require('console');
 const fs = require('fs');
 const path = require('path');
 const { runInNewContext } = require('vm');
@@ -10,6 +9,9 @@ const productsFilePath = path.join(__dirname,'../data/users.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const jsonTable = require('../data/jsonMethods');
 const groupsModel = jsonTable('users');
+const { runInNewContext } = require('vm');
+const { groupEnd } = require('console');
+const { validationResult } = require('express-validator');
 
 const User = require("../routes/users.js");
 
@@ -24,6 +26,15 @@ const controller = {
         res.render(path.join('./users/registro2'));
     },
     guardarRegistro:(req,res)=>{
+        const resultValidation = validationResult(req);
+        
+        if (resultValidation.errors.length > 0) {
+			return res.render(path.join('./users/registro2'), {
+				errors: resultValidation.mapped(),
+                oldData: req.body
+			});
+		}
+
         let group = req.body;
         group.image = req.file.filename;
         groupId_user = groupsModel.create(group);
