@@ -14,14 +14,26 @@ Sprint 3
 
 Sprint 4 
   1. Comenzar a hacer
-    Corregir los Sprint 2,3 y 4
-  3. Hacer más
+    Corregir los Sprint 2,3
+  2. Hacer más
     Mejorar comunicacion
-  5. Continuar haciendo
+  3. Continuar haciendo
     Actualizacion de las tarjetas
-  7. Hacer menos
+  4. Hacer menos
     Trabajar las tarjetas de ultimo momento
-  9. Dejar de hacer
+  5. Dejar de hacer
+    No subir los commits a tiempo 
+
+Spint 5
+  1. Comenzar a hacer
+    Corregir los Sprint 2,3 y 4
+  2. Hacer más
+    Mejorar comunicacion
+  3. Continuar haciendo
+    Actualizacion de las tarjetas y hacer updates de como va el trabajo
+  4. Hacer menos
+    Trabajar las tarjetas de ultimo momento
+  5. Dejar de hacer
     No subir los commits a tiempo 
 
 Miguel
