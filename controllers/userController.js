@@ -1,7 +1,6 @@
 //access and interact with the file system.
 const fs = require('fs');
 const path = require('path');
-const { runInNewContext } = require('vm');
 const { route } = require('../routes/mainRoutes');
 //guardar la ruta hacia donde est a la base de datos
 const productsFilePath = path.join(__dirname,'../data/users.json');
