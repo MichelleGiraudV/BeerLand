@@ -7,7 +7,7 @@ const multer = require('multer');
 //methodOverride
 const methodOverride = require('method-override');
 const { registro } = require('../controllers/userController');
-const { body } = require('express-validator');
+const { body, check } = require('express-validator');
 let historyDBMiddelware = require('../middelwares/historyDBMiddelware');
 var app = express()
 
@@ -50,6 +50,12 @@ const validations= [
 
 //__dirname estoy dentro de routes
 router.get('/login', userController.login);
+
+router.post('/login', [
+    check('email').isEmail(),
+    check('password')
+],
+ userController.processLogin);
 
 router.get('/registro2',userController.registro2);
 

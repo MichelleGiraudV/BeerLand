@@ -13,10 +13,47 @@ const { groupEnd } = require('console');
 const { validationResult } = require('express-validator');
 
 const User = require("../routes/users.js");
+const res = require('express/lib/response');
+const bcrypt = require('bcryptjs/dist/bcrypt');
 
 const controller = {
     login: (req,res)=>{
         res.render(path.join('./users/login'));
+    },
+    processLogin: (req, res)=>{
+        const errors = validationResult(req);
+
+        if(errors.isEmpty()) {
+            let usersJSON = fs.readFileSync('./data/users.json', {errors: errors.errors});
+            let users;
+
+            if (usersJSON == "") {
+                users = [];
+            } else {
+                users = JSON.parse(usersJSON);
+            }
+
+            for (let i = 0; i < users.length; i++) {
+                  if (users[i].email == req.body.email) {
+                      if (bcrypt.compareSync(req.body.password, users[i].password)) {
+                          var usuarioAlLoguearse = user[i];
+                          break;
+                      }
+                  }
+            }
+            if (usuarioAlLoguearse == undefined) {
+                res.render('./users/login', {errors: [
+                    {msg: "Credenciales inválidas."}
+                ]});
+            }
+
+            req.session.usuarioLogueado = usuarioAlLoguearse;
+            res.render('success');
+
+        } else {
+            res.render(path.join('./users/login', {errors: errors.errors}));
+        }
+
     },
     registro: (req,res)=>{
         res.render(path.join('./users/registro'));

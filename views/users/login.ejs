@@ -17,24 +17,26 @@
     <%- include('../partials/header'); %>
 
     <main>
-        <section id="contenedor-login">
-            <a href="/">
-                <div>
-                    <img src="/img/logo/logo.png" alt="" width="70" height="70" padding-top:"20">
+        <form action="/user/login" method="POST">
+            <section id="contenedor-login">
+                <a href="/">
+                    <div>
+                        <img src="/img/logo/logo.png" alt="" width="70" height="70" padding-top:"20">
+                    </div>
+                </a>
+                <h2 style="font: size 2vw; align-items: center;">Iniciar Sesión</h2>
+                <input type="email" id="email" name="email" required placeholder="Email"><br><br>
+                <input type="password" id="pwd" name="pwd" required placeholder="Contraseña"><br><br>
+                <button class="botonDeIngresar">Ingresar</button><br>
+                <div class="mensajeDeRegistro">
+                    <p>¿Aún no te has registrado?</p>
+                    <a href="/user/registro2"><button class="botonDeRegistro">Regístrate</button></a>
+                    <div class="btn1" style="color: white;">
+                        <i class="icon-chevron-sign-left"></i>
+                    </div>
                 </div>
-            </a>
-            <h2 style="font: size 2vw; align-items: center;">Iniciar Sesión</h2>
-            <input type="text" id="name" name="name" required placeholder="Email"><br><br>
-            <input type="password" id="pwd" name="pwd" required placeholder="Contraseña"><br><br>
-            <button class="botonDeIngresar">Ingresar</button><br>
-            <div class="mensajeDeRegistro">
-                <p>¿Aún no te has registrado?</p>
-                <a href="/user/registro2"><button class="botonDeRegistro">Regístrate</button></a>
-                <div class="btn1" style="color: white;">
-                    <i class="icon-chevron-sign-left"></i>
-                </div>
-            </div>
-        </section>
+            </section>
+        </form>
     </main>
     <!-- <footer>
     <div id="footer">
