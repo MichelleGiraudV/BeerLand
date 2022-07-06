@@ -57,8 +57,8 @@ CREATE TABLE `productos` (
 --
 
 CREATE TABLE `product_category` (
-  `category_id` varchar(10) NOT NULL,
-  `category` varchar(20) DEFAULT NULL,
+  `category_id` int(11) NOT NULL,
+  `category` varchar(10) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
