@@ -25,11 +25,11 @@ const upload = multer({storage});
 
 const validations= [
     //notEmpty no puede estar vacio
-    body('firstName').notEmpty().withMessage('Tienes que escribir un nombre'),
-    body('lastName').notEmpty().withMessage('Tienes que escribir un apellido'),
+    body('firstName').notEmpty().withMessage('Tienes que escribir un nombre').isLength({ min: 2}).withMessage('Tienes que escribir un nombre valido'),
+    body('lastName').notEmpty().withMessage('Tienes que escribir un apellido').isLength({ min: 2}).withMessage('Tienes que escribir un apellido valido'),
     body('emailUser').notEmpty().withMessage('Tienes que escribir un correo').bail()
         .isEmail().withMessage('Debes de escribir un formato de correo válido'),
-    body('password').notEmpty().withMessage('Tienes que escribir una contraseña'),
+    body('password').notEmpty().withMessage('Tienes que escribir una contraseña').isLength({ min: 8}).withMessage('Tienes que escribir una contraseña con más de 8 caracteres'),
     body('userImage').custom((value, { req }) => {
 		let file = req.file;
 		let acceptedExtensions = ['.jpg', '.png', '.gif'];
