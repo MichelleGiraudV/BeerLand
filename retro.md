@@ -36,6 +36,29 @@ Spint 5
   5. Dejar de hacer
     No subir los commits a tiempo 
 
+Spint 6
+  1. Comenzar a hacer
+    Corregir los Sprint 2,3, 4 y 5
+  2. Hacer más
+    Considerar los timepos
+  3. Continuar haciendo
+    Actualizacion de las tarjetas
+  4. Hacer menos
+    Trabajar las tarjetas de ultimo momento
+  5. Dejar de hacer
+    Acabar a los ultimos momentos 
+Spint 6
+  1. Comenzar a hacer
+    Corregir los Sprint 2,3, 4, 5 y 6
+  2. Hacer más
+    Organizacion de tareas
+  3. Continuar haciendo
+    Comunicacion
+  4. Hacer menos
+    Trabajar las tarjetas de ultimo momento
+  5. Dejar de hacer
+    No hablar sobre cambios o avances
+
 Miguel
 
 Sprint 3

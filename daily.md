@@ -45,6 +45,31 @@ Michelle
 2. ¿Qué va a hacer hoy? Revisar que todo este complento 
 3. ¿Si se encontró con algún impedimento? No
 
+**01 Mayo 2022**
+1. ¿Qué hizo ayer? organizar spint
+2. ¿Qué va a hacer hoy? Revisar que todo este complento 
+3. ¿Si se encontró con algún impedimento? No
+**15 Mayo 2022**
+1. ¿Qué hizo ayer? Diagramas
+2. ¿Qué va a hacer hoy? Estrctura
+3. ¿Si se encontró con algún impedimento? No
+**01 Junio 2022**
+1. ¿Qué hizo ayer? Revisar Diagramas y pasarlos a SQL
+2. ¿Qué va a hacer hoy? Script de los datos 
+3. ¿Si se encontró con algún impedimento? No
+**15 Junio 2022**
+1. ¿Qué hizo ayer? Revisar Script de los datos
+2. ¿Qué va a hacer hoy? Implementarlo en el proyecto
+3. ¿Si se encontró con algún impedimento? No
+**01 Julio 2022**
+1. ¿Qué hizo ayer? Organizar srint 7
+2. ¿Qué va a hacer hoy? Validaciones del back y front 
+3. ¿Si se encontró con algún impedimento? No
+**15 Julio 2022**
+1. ¿Qué hizo ayer? Validaciones del back y front 
+2. ¿Qué va a hacer hoy? Documentos extras
+3. ¿Si se encontró con algún impedimento? No
+
 Miguel 
 
 **30 de Marzo 2021**
