@@ -24,24 +24,28 @@
                     <input type="text" placeholder="Nombre" name="firstName" id="firstName" value="<%= locals.oldData ? oldData.firstName : null %>"><br>
                     <% if(locals.errors  && errors.firstName) {%>
                         <div class="error">
+                            <i class="fa-solid fa-circle-exclamation"></i>&nbsp
                             <%= errors.firstName.msg %>
                         </div>
                     <%}%>
                     <input type="text" placeholder="Apellido" name="lastName" id="lastName" value="<%= locals.oldData ? oldData.lastName : null %>"><br>
                     <% if(locals.errors  && errors.lastName){%>
                         <div class="error">
+                            <i class="fa-solid fa-circle-exclamation"></i>&nbsp
                             <%= errors.lastName.msg %>
                         </div>
                     <%}%>
                     <input type="text" placeholder="Email" name="emailUser" id="emailUser" value="<%= locals.oldData ? oldData.emailUser : null %>"><br>
                     <% if(locals.errors  && errors.emailUser){%>
                         <div class="error">
+                            <i class="fa-solid fa-circle-exclamation"></i>&nbsp
                             <%= errors.emailUser.msg %>
                         </div>
                     <%}%>
                     <input type="password" placeholder="Password" name="password" id="password" value="<%= locals.oldData ? oldData.password : null %>">
                     <% if(locals.errors  && errors.password){%>
                         <div class="error">
+                            <i class="fa-solid fa-circle-exclamation"></i>&nbsp
                             <%= errors.password.msg %>
                         </div>
                     <%}%>
@@ -50,6 +54,7 @@
                         <input type="file" name="userImage" id="userImage" class="form-control <%= locals.errors && errors.userImage ? 'is-invalid' : null %>">
                         <% if(locals.errors  && errors.userImage){%>
                             <div class="error">
+                                <i class="fa-solid fa-circle-exclamation"></i>&nbsp
                                 <%= errors.userImage.msg %>
                             </div>
                         <%}%>

@@ -19,6 +19,8 @@ main {
 }
 .error {
   color: red;
+  font-size: small;
+  font-weight: 500;
 }
 * {
     box-sizing: border-box;
